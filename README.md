@@ -15,7 +15,7 @@ spec:
     name: in-cluster
   project: default
   source:
-    path: Apps/Jellyfin
+    path: apps
     repoURL: https://github.com/azaurus1/homelab/
     targetRevision: HEAD
 
