@@ -1,7 +1,5 @@
 service:
   main:
-    # -- Enables or disables the service
-    enabled: true
     # -- Set the service type
     type: NodePort
     # -- Configure the Service port information here.
@@ -19,4 +17,4 @@ service:
         protocol: HTTP
         # -- Specify the nodePort value for the LoadBalancer and NodePort service types.
         # [[ref]](https://kubernetes.io/docs/concepts/services-networking/service/#type-nodeport)
-        nodePort: 8096
+        nodePort: 30000
