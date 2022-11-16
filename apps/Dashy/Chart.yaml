@@ -1,0 +1,7 @@
+apiVersion: v2
+name: dashy
+version: 0.0.0
+dependencies:
+  - name: dashy
+    version: 1.0.0
+    repository: https://krzwiatrzyk.github.io/charts/
