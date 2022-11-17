@@ -14,15 +14,15 @@ spec:
           - path: {{ $stack.name }}/*
   template:
     metadata:
-      name: '{{$.basename}}'
+      name: {{$.Values.metadata.name}}
     spec:
       destination:
         name: in-cluster
-        namespace: '{{$.basename}}'
+        namespace: '{{$.Values.spec.destination.namespace}}'
       project: default # TODO
       source:
         repoURL: {{ $.Values.spec.source.repoURL }}
-        path: '{{$.path}}'
+        path: {{$.Values.spec.source.path}}
         targetRevision: {{ $.Values.spec.source.targetRevision }}
       syncPolicy:
         automated:
