@@ -4,3 +4,5 @@ spec:
   source:
     repoURL: https://github.com/azaurus1/homelab
     targetRevision: HEAD
+stacks:
+  - name: apps
