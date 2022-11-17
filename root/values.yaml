@@ -6,4 +6,3 @@ spec:
     targetRevision: HEAD
 stacks:
   - name: apps
-  - name: apps2
