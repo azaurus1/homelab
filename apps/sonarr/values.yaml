@@ -3,4 +3,6 @@ sonarr:
     main:
       ports:
         http:
+          type: NodePort
           port: 8990
+          nodePort: 30001
