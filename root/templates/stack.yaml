@@ -12,16 +12,16 @@ spec:
       - path: apps/*
   template:
     metadata:
-      name: '{{` {{path.basename}} `}}'
+      name: '{{`{{path.basename}}`}}'
     spec:
       project: default
       source:
         repoURL: https://github.com/azaurus1/homelab
         targetRevision: HEAD
-        path: '{{ `{{path}}` }}'
+        path: '{{`{{path}}`}}'
       destination:
         name: in-cluster
-        namespace: '{{ `{{path.basename}}` }}'
+        namespace: '{{`{{path.basename}}`}}'
       syncPolicy:
         syncOptions:
         - CreateNamespace=true
