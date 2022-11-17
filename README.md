@@ -11,12 +11,17 @@ metadata:
   namespace: argocd
 spec:
   destination:
-    namespace: default
     name: in-cluster
-  project: default
+    namespace: default
+    server: ''
   source:
     path: root
-    repoURL: https://github.com/azaurus1/homelab/
+    repoURL: 'https://github.com/azaurus1/homelab/'
     targetRevision: HEAD
+  project: default
+  syncPolicy:
+    automated:
+      prune: false
+      selfHeal: false
 
 ```
