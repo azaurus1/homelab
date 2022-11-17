@@ -8,8 +8,8 @@ metadata:
 spec:
   generators:
     - git:
-        repoURL: {{ $.Values.spec.source.repoURL }}
-        revision: {{ $.Values.spec.source.targetRevision }}
+        repoURL: {{ .Values.spec.source.repoURL }}
+        revision: {{ .Values.spec.source.targetRevision }}
         directories:
           - path: {{ $stack.name }}/*
   template:
@@ -18,11 +18,11 @@ spec:
     spec:
       destination:
         name: in-cluster
-        namespace: '{{$.Values.spec.destination.namespace}}'
+        namespace: '{{ default `{{path.basename}}` $stack.namespace }}'
       project: default # TODO
       source:
         repoURL: {{ $.Values.spec.source.repoURL }}
-        path: {{$.Values.spec.source.path}}
+        path: '{{ `{{path}}` }}'
         targetRevision: {{ $.Values.spec.source.targetRevision }}
       syncPolicy:
         automated:
