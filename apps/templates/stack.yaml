@@ -21,9 +21,9 @@ spec:
         namespace: '{{ default `{{path.basename}}` $stack.namespace }}'
       project: default # TODO
       source:
-        repoURL: {{ $.Values.gitops.repo }}
+        repoURL: {{ $.Values.spec.source.repoURL }}
         path: '{{ `{{path}}` }}'
-        targetRevision: {{ $.Values.gitops.revision }}
+        targetRevision: {{ $.Values.spec.source.repoURL }}
       syncPolicy:
         automated:
           prune: true
