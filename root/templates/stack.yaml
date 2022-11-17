@@ -21,7 +21,7 @@ spec:
         path: '{{ `{{path}}` }}'
       destination:
         name: in-cluster
-        namespace: '{{path.basename}}'
+        namespace: '{{ `{{path.basename}}` }}'
       syncPolicy:
         syncOptions:
         - CreateNamespace=true
