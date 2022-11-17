@@ -1,7 +1,9 @@
+{{- range $index, $stack := .Values.stacks}}
+---
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
-  name: apps
+  name: {{$stack.name}}
   namespace: argocd
 spec:
   generators:
@@ -9,7 +11,7 @@ spec:
       repoURL: https://github.com/azaurus1/homelab
       revision: HEAD
       directories:
-      - path: apps/*
+      - path: {{$stack.name}}/*
   template:
     metadata:
       name: '{{`{{path.basename}}`}}'
