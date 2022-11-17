@@ -1,5 +1,0 @@
-jellyfin:
-  service:
-    type: NodePort
-    port: 8096
-    nodePort: 30000

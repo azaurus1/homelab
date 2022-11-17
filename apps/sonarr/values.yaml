@@ -1,0 +1,6 @@
+sonarr:
+  service:
+    main:
+      ports:
+        http:
+          port: 8990
