@@ -14,15 +14,15 @@ spec:
           - path: {{ $stack.name }}/*
   template:
     metadata:
-      name: '{{ $stack.name }}'
+      name: '{{.path.basename}}'
     spec:
       destination:
         name: in-cluster
-        namespace: '{{ default `{{path.basename}}` $stack.namespace }}'
+        namespace: '{{.path.basename}}'
       project: default # TODO
       source:
         repoURL: {{ $.Values.spec.source.repoURL }}
-        path: {{$stack.name}}/Jellyfin
+        path: '{{.path.path}}'
         targetRevision: {{ $.Values.spec.source.targetRevision }}
       syncPolicy:
         automated:
