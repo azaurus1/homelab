@@ -15,7 +15,7 @@ spec:
     name: in-cluster
   project: default
   source:
-    path: apps
+    path: root
     repoURL: https://github.com/azaurus1/homelab/
     targetRevision: HEAD
 
