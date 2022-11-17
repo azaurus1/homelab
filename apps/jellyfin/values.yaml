@@ -1,0 +1,9 @@
+jellyfin:
+  service:
+    main:
+      type: NodePort
+      ports:
+        http:
+          port: 8096
+          targetPort: 8096
+          nodePort: 30002

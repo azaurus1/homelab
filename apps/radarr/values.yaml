@@ -1,0 +1,9 @@
+radarr:
+  service:
+    main:
+      type: NodePort
+      ports:
+        http:
+          port: 7878
+          targetPort: 7878
+          nodePort: 30003
