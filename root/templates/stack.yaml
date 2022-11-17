@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
-  name: cluster-addons
+  name: apps
   namespace: argocd
 spec:
   generators:
@@ -12,13 +12,13 @@ spec:
       - path: apps/*
   template:
     metadata:
-      name: '{{path.basename}}'
+      name: '{{` {{path.basename}} `}}'
     spec:
       project: default
       source:
         repoURL: https://github.com/azaurus1/homelab
         targetRevision: HEAD
-        path: '{{path}}'
+        path: '{{ `{{path}}` }}'
       destination:
         name: in-cluster
         namespace: '{{path.basename}}'
