@@ -14,7 +14,7 @@ spec:
           - path: {{ $stack.name }}/*
   template:
     metadata:
-      name: '{{ `{{path.basename}}` }}'
+      name: '{{ $stack.name }}'
     spec:
       destination:
         name: in-cluster
