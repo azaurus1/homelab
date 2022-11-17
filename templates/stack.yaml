@@ -22,7 +22,7 @@ spec:
       project: default # TODO
       source:
         repoURL: {{ $.Values.spec.source.repoURL }}
-        path: {{$.Values.spec.source.path}}
+        path: {{ $.Values.spec.source.path }}
         targetRevision: {{ $.Values.spec.source.repoURL }}
       syncPolicy:
         automated:
