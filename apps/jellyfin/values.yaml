@@ -1,12 +1,10 @@
 jellyfin:
   ingress:
-    enabled: true
-    ingressClassName: nginx
-    rules:
-    - host: myservicea.foo.org
-    http:
-      paths:
-      - path: /
-        backend:
-          serviceName: myservicea
-          servicePort: 80
+    main:
+      enabled: true
+      ingressClassName: nginx
+      hosts:
+        - host: &host jellyfin.local
+          paths:
+            - path: /
+              pathType: Prefix
