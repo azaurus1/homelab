@@ -1,5 +1,6 @@
 jellyfin:
   ingress:
+    enabled: true
     ingressClassName: nginx
     rules:
     - host: myservicea.foo.org
