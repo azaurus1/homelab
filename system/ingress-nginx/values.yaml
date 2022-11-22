@@ -2,5 +2,10 @@ ingress-nginx:
   controller:
     admissionWebhooks:
       timeoutSeconds: 30
-  tcp:
-    22: gitea/gitea-ssh:22
+  
+  resource.customizations: |
+    extensions/Ingress:
+      health.lua: |
+        hs = {}
+        hs.status = "Healthy"
+        return hs
