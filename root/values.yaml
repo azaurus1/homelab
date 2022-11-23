@@ -8,4 +8,4 @@ stacks:
   - name: apps
   - name: system
 volumes:
-  - name: volumes
+  - name: jellyfin-volume

@@ -11,6 +11,6 @@ spec:
     - {{$volume.accessMode}} #"ReadWriteMany"
   resources:
     requests:
-      storage: {{$volume.storage}}#1Gi
+      storage: {{$volume.storage}} #1Gi
   storageClassName: volume-hostpath
 {{- end }}
