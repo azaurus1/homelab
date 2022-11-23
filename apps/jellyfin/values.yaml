@@ -1,10 +1,9 @@
 jellyfin:
-  ingress:
+   service:
     main:
-      enabled: true
-      ingressClassName: nginx
-      hosts:
-        - host: jellyfin.home.lab
-          paths:
-            - path: /
-              pathType: Prefix
+      type: NodePort
+      ports:
+        http:
+          port: 8096
+          targetPort: 8096
+          nodePort: 30000
