@@ -7,5 +7,19 @@ jellyfin:
           port: 8096
           targetPort: 8096
           nodePort: 30000
-    persistence:
-      storageClass: volume-hostpath
+   persistence:
+     media:
+       enabled: true
+       type: pvc
+       mountPath: /media
+       storageClass: volume-hostpath
+     cache:
+       enabled: true
+       type: pvc
+       mountPath: /cache
+       storageClass: volume-hostpath 
+     config:
+       enabled: true
+       type: pvc
+       mountPath: /
+       storageClass: volume-hostpath
