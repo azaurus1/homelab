@@ -1,3 +1,0 @@
-name: jellyfin-volume
-accessMode: "ReadWriteMany"
-storage: 1Gi

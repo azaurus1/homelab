@@ -1,16 +1,28 @@
-{{- range $index, $volume := .Values.volumes}}
 ---
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: {{$volume.name}}
+  name: jellyfin-volume
   annotations:
     argocd.argoproj.io/sync-options: Prune=false
 spec:
   accessModes:
-    - {{$volume.accessMode}} #"ReadWriteMany"
+    - "ReadWriteMany" #"ReadWriteMany"
   resources:
     requests:
-      storage: {{$volume.storage}} #1Gi
+      storage: 3Gi #1Gi
   storageClassName: volume-hostpath
-{{- end }}
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: jellyfin-volume-2
+  annotations:
+    argocd.argoproj.io/sync-options: Prune=false
+spec:
+  accessModes:
+    - "ReadWriteMany" #"ReadWriteMany"
+  resources:
+    requests:
+      storage: 3Gi #1Gi
+  storageClassName: volume-hostpath
