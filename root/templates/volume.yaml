@@ -1,0 +1,16 @@
+{{- range $index, $volume := .Values.volumes}}
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: {{$volume.name}}
+  annotations:
+    argocd.argoproj.io/sync-options: Prune=false
+spec:
+  accessModes:
+    - {{$volume.accessMode}} #"ReadWriteMany"
+  resources:
+    requests:
+      storage: {{$volume.storage}}#1Gi
+  storageClassName: volume-hostpath
+{{- end }}
