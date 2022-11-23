@@ -22,7 +22,7 @@ jellyfin:
        storageClass: volume-hostpath
        accessMode: ReadWriteOnce
        size: 1Gi
-      config:
+     config:
        enabled: true
        type: pvc
        mountPath: /
