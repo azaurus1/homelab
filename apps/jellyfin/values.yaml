@@ -17,9 +17,4 @@ jellyfin:
        enabled: true
        type: pvc
        mountPath: /cache
-       storageClass: volume-hostpath 
-     config:
-       enabled: true
-       type: pvc
-       mountPath: /
        storageClass: volume-hostpath
