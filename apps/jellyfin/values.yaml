@@ -13,8 +13,10 @@ jellyfin:
        type: pvc
        mountPath: /media
        storageClass: volume-hostpath
+       accessMode: ReadWriteOnce
      cache:
        enabled: true
        type: pvc
        mountPath: /cache
        storageClass: volume-hostpath
+       accessMode: ReadWriteOnce
