@@ -28,8 +28,8 @@ spec:
 
 Applications are mapped to the following nodePorts:
 
-Jellyfin -> 30000
-qbittorrent -> 30001
-radarr -> 30002
-sonarr -> 30003
+* Jellyfin -> 30000
+* qbittorrent -> 30001
+* radarr -> 30002
+* sonarr -> 30003
 
