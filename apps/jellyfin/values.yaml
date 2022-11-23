@@ -4,7 +4,7 @@ jellyfin:
       enabled: true
       ingressClassName: nginx
       hosts:
-        - host: jellyfin.local
+        - host: jellyfin.home.lab
           paths:
             - path: /
               pathType: Prefix
