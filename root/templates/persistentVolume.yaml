@@ -11,3 +11,4 @@ spec:
   persistentVolumeReclaimPolicy: Retain
   claimRef:
     namespace: default
+  storageClassName: volume-hostpath
