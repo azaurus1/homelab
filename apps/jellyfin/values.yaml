@@ -11,12 +11,12 @@ jellyfin:
      media:
        enabled: true
        mountPath: /media
-       existingClaim: jellyfin-media
+       existingClaim: default/jellyfin-media
      cache:
        enabled: true
        mountPath: /cache
-       existingClaim: jellyfin-cache
+       existingClaim: default/jellyfin-cache
      config:
        enabled: true
        mountPath: /config
-       existingClaim: jellyfin-config
+       existingClaim: default/jellyfin-config
