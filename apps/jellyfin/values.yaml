@@ -11,12 +11,7 @@ jellyfin:
      media:
        enabled: true
        mountPath: /media
-       storageClass: volume-hostpath
-       accessModes:
-          - "ReadWriteMany" #"ReadWriteMany"
-       resources:
-         requests:
-            storage: 1Gi #1Gi
+       existingClaim: jellyfin-media
      cache:
        enabled: true
        mountPath: /cache
