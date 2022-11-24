@@ -15,8 +15,8 @@ jellyfin:
      cache:
        enabled: true
        mountPath: /cache
-       existingClaim: jellyfin-cache
+       storageClass: volume-hostpath
      config:
        enabled: true
        mountPath: /config
-       existingClaim: jellyfin-config
+       storageClass: volume-hostpath
