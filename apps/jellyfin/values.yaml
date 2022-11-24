@@ -15,8 +15,8 @@ jellyfin:
      cache:
        enabled: true
        mountPath: /cache
-       existingClaim: default/jellyfin-cache
+       existingClaim: pvc-1dd5e60a-b218-4092-8ab5-e1c1e8ab6896
      config:
        enabled: true
        mountPath: /config
-       existingClaim: default/jellyfin-config
+       existingClaim: pvc-efa5c032-9f03-4bcd-8fb1-1b0f7a140d6c
