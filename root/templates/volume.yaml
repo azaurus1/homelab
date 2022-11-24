@@ -10,6 +10,8 @@ spec:
     namespace: default
   accessModes:
     - "ReadWriteMany" #"ReadWriteMany"
+  capacity:
+    storage: 1Gi
 ---
 kind: PersistentVolumeClaim
 apiVersion: v1
