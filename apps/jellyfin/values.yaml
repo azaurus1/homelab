@@ -10,9 +10,9 @@ jellyfin:
    persistence:
      media:
        enabled: true
-       type: hostPath
        mountPath: /media
-       existingClaim: media
+       existingClaim: pvc-ff18c8a9-f11c-4bd7-8ef8-7c99e50d7550
+       subPath: media
      #cache:
      #  enabled: true
      #  mountPath: /cache
