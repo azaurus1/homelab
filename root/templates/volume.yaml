@@ -27,7 +27,7 @@ spec:
     requests:
       storage: 1Gi #1Gi
   storageClassName: volume-hostpath
-  volumeName: jellyfin-cache
+  #volumeName: jellyfin-cache
 ---
 kind: PersistentVolumeClaim
 apiVersion: v1
@@ -42,4 +42,4 @@ spec:
     requests:
       storage: 1Gi #1Gi
   storageClassName: volume-hostpath
-  volumeName: jellyfin-config
+  #volumeName: jellyfin-config
