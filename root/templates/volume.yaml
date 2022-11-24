@@ -1,4 +1,17 @@
 ---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: demo
+spec:
+  capacity:
+    storage: 5Gi
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Delete
+  storageClassName: volume-hostpath
+---
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
@@ -11,7 +24,7 @@ spec:
   resources:
     requests:
       storage: 1Gi #1Gi
-  storageClassName: volume-hostpath
+  volumeName: demo
   #volumeName: jellyfin-media
 ---
 kind: PersistentVolumeClaim
