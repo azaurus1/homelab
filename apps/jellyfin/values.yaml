@@ -17,8 +17,12 @@ jellyfin:
      cache:
        enabled: true
        mountPath: /cache
-       existingClaim: jellyfin-cache
+       storageClass: volume-hostpath
+       accessMode: ReadWriteOnce
+       size: 1Gi
      config:
        enabled: true
        mountPath: /config
-       existingClaim: jellyfin-config
+       storageClass: volume-hostpath
+       accessMode: ReadWriteOnce
+       size: 1Gi
