@@ -9,7 +9,7 @@ spec:
   accessModes:
     - "ReadWriteMany" #"ReadWriteMany"
   resources:
-   requests:
+    requests:
       storage: 1Gi #1Gi
   storageClassName: volume-hostpath
   #volumeName: jellyfin-media
@@ -23,7 +23,7 @@ metadata:
 spec:
   accessModes:
     - "ReadWriteMany" #"ReadWriteMany"
- resources:
+  resources:
     requests:
       storage: 1Gi #1Gi
   storageClassName: volume-hostpath
