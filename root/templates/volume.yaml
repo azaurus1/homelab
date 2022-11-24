@@ -4,10 +4,10 @@ kind: PersistentVolume
 metadata:
   name: foo-pv
 spec:
-  storageClassName: ""
+  storageClassName: volume-hostpath
   claimRef:
     name: foo-pvc
-    namespace: foo
+    namespace: default
 ---
 kind: PersistentVolumeClaim
 apiVersion: v1
