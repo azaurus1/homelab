@@ -1,105 +1,105 @@
----
-kind: PersistentVolumeClaim
-apiVersion: v1
-metadata:
-  name: media
-  annotations:
-    argocd.argoproj.io/sync-options: Prune=false
-spec:
-  accessModes:
-    - "ReadWriteMany" #"ReadWriteMany"
-  resources:
-    requests:
-      storage: 1Gi #1Gi
-  storageClassName: volume-hostpath
-  #volumeName: jellyfin-media
----
-kind: PersistentVolumeClaim
-apiVersion: v1
-metadata:
-  name: downloads
-  annotations:
-    argocd.argoproj.io/sync-options: Prune=false
-spec:
-  accessModes:
-    - "ReadWriteMany" #"ReadWriteMany"
-  resources:
-    requests:
-      storage: 1Gi #1Gi
-  storageClassName: volume-hostpath
-  #volumeName: jellyfin-media
----
-kind: PersistentVolumeClaim
-apiVersion: v1
-metadata:
-  name: qbittorrent-config
-  annotations:
-    argocd.argoproj.io/sync-options: Prune=false
-spec:
-  accessModes:
-    - "ReadWriteMany" #"ReadWriteMany"
-  resources:
-    requests:
-      storage: 1Gi #1Gi
-  storageClassName: volume-hostpath
-  #volumeName: jellyfin-media
----
-kind: PersistentVolumeClaim
-apiVersion: v1
-metadata:
-  name: sonarr-config
-  annotations:
-    argocd.argoproj.io/sync-options: Prune=false
-spec:
-  accessModes:
-    - "ReadWriteMany" #"ReadWriteMany"
-  resources:
-    requests:
-      storage: 1Gi #1Gi
-  storageClassName: volume-hostpath
-  #volumeName: jellyfin-media
----
-kind: PersistentVolumeClaim
-apiVersion: v1
-metadata:
-  name: radarr-config
-  annotations:
-    argocd.argoproj.io/sync-options: Prune=false
-spec:
-  accessModes:
-    - "ReadWriteMany" #"ReadWriteMany"
-  resources:
-    requests:
-      storage: 1Gi #1Gi
-  storageClassName: volume-hostpath
-  #volumeName: jellyfin-media
----
-kind: PersistentVolumeClaim
-apiVersion: v1
-metadata:
-  name: jellyfin-config
-  annotations:
-    argocd.argoproj.io/sync-options: Prune=false
-spec:
-  accessModes:
-    - "ReadWriteMany" #"ReadWriteMany"
-  resources:
-    requests:
-      storage: 1Gi #1Gi
-  storageClassName: volume-hostpath
-  #volumeName: jellyfin-config
----
-kind: PersistentVolumeClaim
-apiVersion: v1
-metadata:
-  name: jellyfin-cache
-  annotations:
-    argocd.argoproj.io/sync-options: Prune=false
-spec:
-  accessModes:
-    - "ReadWriteMany" #"ReadWriteMany"
-  resources:
-    requests:
-      storage: 1Gi #1Gi
-  storageClassName: volume-hostpath
-  #volumeName: jellyfin-cache
+#---
+#kind: PersistentVolumeClaim
+#apiVersion: v1
+#metadata:
+#  name: media
+#  annotations:
+#    argocd.argoproj.io/sync-options: Prune=false
+#spec:
+#  accessModes:
+#    - "ReadWriteMany" #"ReadWriteMany"
+#  resources:
+#    requests:
+#      storage: 1Gi #1Gi
+#  storageClassName: volume-hostpath
+#  #volumeName: jellyfin-media
+#---
+#kind: PersistentVolumeClaim
+#apiVersion: v1
+#metadata:
+#  name: downloads
+#  annotations:
+#    argocd.argoproj.io/sync-options: Prune=false
+#spec:
+#  accessModes:
+#    - "ReadWriteMany" #"ReadWriteMany"
+#  resources:
+#    requests:
+#      storage: 1Gi #1Gi
+#  storageClassName: volume-hostpath
+#  #volumeName: jellyfin-media
+#---
+#kind: PersistentVolumeClaim
+#apiVersion: v1
+#metadata:
+#  name: qbittorrent-config
+#  annotations:
+#    argocd.argoproj.io/sync-options: Prune=false
+#spec:
+#  accessModes:
+#    - "ReadWriteMany" #"ReadWriteMany"
+#  resources:
+#    requests:
+#      storage: 1Gi #1Gi
+#  storageClassName: volume-hostpath
+#  #volumeName: jellyfin-media
+#---
+#kind: PersistentVolumeClaim
+#apiVersion: v1
+#metadata:
+#  name: sonarr-config
+#  annotations:
+#    argocd.argoproj.io/sync-options: Prune=false
+#spec:
+#  accessModes:
+#    - "ReadWriteMany" #"ReadWriteMany"
+#  resources:
+#    requests:
+#      storage: 1Gi #1Gi
+#  storageClassName: volume-hostpath
+#  #volumeName: jellyfin-media
+#---
+#kind: PersistentVolumeClaim
+#apiVersion: v1
+#metadata:
+#  name: radarr-config
+#  annotations:
+#    argocd.argoproj.io/sync-options: Prune=false
+#spec:
+#  accessModes:
+#    - "ReadWriteMany" #"ReadWriteMany"
+#  resources:
+#    requests:
+#      storage: 1Gi #1Gi
+#  storageClassName: volume-hostpath
+#  #volumeName: jellyfin-media
+#---
+#kind: PersistentVolumeClaim
+#apiVersion: v1
+#metadata:
+#  name: jellyfin-config
+#  annotations:
+#    argocd.argoproj.io/sync-options: Prune=false
+#spec:
+#  accessModes:
+#    - "ReadWriteMany" #"ReadWriteMany"
+#  resources:
+#    requests:
+#      storage: 1Gi #1Gi
+#  storageClassName: volume-hostpath
+#  #volumeName: jellyfin-config
+#---
+#kind: PersistentVolumeClaim
+#apiVersion: v1
+#metadata:
+#  name: jellyfin-cache
+#  annotations:
+#    argocd.argoproj.io/sync-options: Prune=false
+#spec:
+#  accessModes:
+#    - "ReadWriteMany" #"ReadWriteMany"
+#  resources:
+#    requests:
+#      storage: 1Gi #1Gi
+#  storageClassName: volume-hostpath
+#  #volumeName: jellyfin-cache
