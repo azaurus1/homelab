@@ -8,6 +8,8 @@ spec:
   claimRef:
     name: foo-pvc
     namespace: default
+  accessModes:
+    - "ReadWriteMany" #"ReadWriteMany"
 ---
 kind: PersistentVolumeClaim
 apiVersion: v1
