@@ -12,7 +12,7 @@ jellyfin:
        enabled: true
        mountPath: /media
        type: pvc
-       existingClaim: media
+       existingClaim: pvc-ff18c8a9-f11c-4bd7-8ef8-7c99e50d7550 
      #cache:
      #  enabled: true
      #  mountPath: /cache
