@@ -12,7 +12,6 @@ spec:
     requests:
       storage: 1Gi #1Gi
   storageClassName: volume-hostpath
-  volumeBindingMode: Immediate
 ---
 kind: PersistentVolumeClaim
 apiVersion: v1
@@ -27,7 +26,6 @@ spec:
     requests:
       storage: 1Gi #1Gi
   storageClassName: volume-hostpath
-  volumeBindingMode: Immediate
 ---
 kind: PersistentVolumeClaim
 apiVersion: v1
@@ -42,4 +40,3 @@ spec:
     requests:
       storage: 1Gi #1Gi
   storageClassName: volume-hostpath
-  volumeBindingMode: Immediate
