@@ -11,12 +11,12 @@ jellyfin:
      media:
        enabled: true
        mountPath: /media
-       existingClaim: pvc-d22aa8bf-4018-4c40-998d-3ad80e9510be
+       existingClaim: default/jellyfin-media
      cache:
        enabled: true
        mountPath: /cache
-       existingClaim: pvc-1dd5e60a-b218-4092-8ab5-e1c1e8ab6896
+       existingClaim: default/jellyfin-cache
      config:
        enabled: true
        mountPath: /config
-       existingClaim: pvc-efa5c032-9f03-4bcd-8fb1-1b0f7a140d6c
+       existingClaim: default/jellyfin-config
