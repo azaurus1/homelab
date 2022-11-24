@@ -1,18 +1,4 @@
 ---
-apiVersion: v1
-kind: PersistentVolume
-metadata:
-  name: foo-pv
-spec:
-  storageClassName: volume-hostpath
-  claimRef:
-    name: foo-pvc
-    namespace: default
-  accessModes:
-    - "ReadWriteMany" #"ReadWriteMany"
-  capacity:
-    storage: 1Gi
----
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
