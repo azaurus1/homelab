@@ -10,22 +10,13 @@ jellyfin:
    persistence:
      media:
        enabled: true
-       type: pvc
        mountPath: /media
-       storageClass: volume-hostpath
-       accessMode: ReadWriteOnce
-       size: 1Gi
+       existingClaim: jellyfin-volume-media
      cache:
        enabled: true
-       type: pvc
        mountPath: /cache
-       storageClass: volume-hostpath
-       accessMode: ReadWriteOnce
-       size: 1Gi
+       existingClaim: jellyfin-volume-cache
      config:
        enabled: true
-       type: pvc
        mountPath: /config
-       storageClass: volume-hostpath
-       accessMode: ReadWriteOnce
-       size: 1Gi
+       existingClaim: jellyfin-volume-config

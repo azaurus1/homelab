@@ -2,7 +2,7 @@
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: jellyfin-volume
+  name: jellyfin-volume-media
   annotations:
     argocd.argoproj.io/sync-options: Prune=false
 spec:
@@ -10,13 +10,13 @@ spec:
     - "ReadWriteMany" #"ReadWriteMany"
   resources:
     requests:
-      storage: 3Gi #1Gi
+      storage: 1Gi #1Gi
   storageClassName: volume-hostpath
 ---
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: jellyfin-volume-2
+  name: jellyfin-volume-cache
   annotations:
     argocd.argoproj.io/sync-options: Prune=false
 spec:
@@ -24,5 +24,19 @@ spec:
     - "ReadWriteMany" #"ReadWriteMany"
   resources:
     requests:
-      storage: 3Gi #1Gi
+      storage: 1Gi #1Gi
+  storageClassName: volume-hostpath
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: jellyfin-volume-config
+  annotations:
+    argocd.argoproj.io/sync-options: Prune=false
+spec:
+  accessModes:
+    - "ReadWriteMany" #"ReadWriteMany"
+  resources:
+    requests:
+      storage: 1Gi #1Gi
   storageClassName: volume-hostpath
