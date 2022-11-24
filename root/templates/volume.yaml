@@ -11,7 +11,8 @@ spec:
   resources:
     requests:
       storage: 1Gi #1Gi
-  volumeName: demo
+  
+  storageClassName: volume-hostpath
   #volumeName: jellyfin-media
 ---
 kind: PersistentVolumeClaim
