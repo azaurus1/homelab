@@ -6,12 +6,12 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-options: Prune=false
 spec:
+  name: media
   accessModes:
     - "ReadWriteMany" #"ReadWriteMany"
   resources:
     requests:
       storage: 1Gi #1Gi
-  
   storageClassName: volume-hostpath
   #volumeName: jellyfin-media
 ---
