@@ -1,0 +1,13 @@
+---
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: test-volume
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  claimRef:
+    namespace: default
