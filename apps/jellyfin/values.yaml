@@ -11,7 +11,7 @@ jellyfin:
      media:
        enabled: true
        mountPath: /media
-       existingClaim: pvc-336058e1-5f9f-47b7-825e-a430a8d8509f
+       existingClaim: default/media
      cache:
        enabled: true
        mountPath: /cache
