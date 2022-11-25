@@ -10,7 +10,6 @@ radarr:
   persistence:
     config:
        enabled: true
-       mountPath: /config
        storageClass: volume-hostpath
        accessMode: ReadWriteOnce
        size: 1Gi
