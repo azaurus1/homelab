@@ -9,13 +9,14 @@ qbittorrent:
           targetPort: 8080
     bittorrent:
       enabled: true
-      type: ClusterIP
+      type: NodePort
       ports:
         bittorrent:
           enabled: true
           port: 6881
           protocol: TCP
           targetPort: 6881
+          nodePort: 30010
   persistence:
     media:
       enabled: true
