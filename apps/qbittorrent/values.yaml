@@ -16,3 +16,14 @@ qbittorrent:
           port: 6881
           protocol: TCP
           targetPort: 6881
+  persistence:
+    media:
+      enabled: true
+       mountPath: /media
+       type: pvc
+       existingClaim: media
+    downloads:
+      enabled: true
+       mountPath: /downloads
+       type: pvc
+       existingClaim: downloads
