@@ -19,8 +19,3 @@ jellyfin:
        storageClass: volume-hostpath
        accessMode: ReadWriteOnce
        size: 1Gi
-     config:
-       enabled: true
-       storageClass: volume-hostpath
-       accessMode: ReadWriteOnce
-       size: 1Gi
