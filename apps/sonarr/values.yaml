@@ -10,6 +10,5 @@ sonarr:
   persistence:
     media:
        enabled: true
-       mountPath: /media
        type: pvc
        existingClaim: media
