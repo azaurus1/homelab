@@ -33,4 +33,4 @@ Applications are mapped to the following nodePorts:
 * radarr -> 30002
 * sonarr -> 30003
 * prowlarr -> 30004
-
+* emby -> 30005
