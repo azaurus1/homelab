@@ -11,7 +11,7 @@ jellyfin:
      media:
        enabled: true
        mountPath: /media
-       type: pvc
+       type: Hostpath
        existingClaim: media 
      #cache:
      #  enabled: true
