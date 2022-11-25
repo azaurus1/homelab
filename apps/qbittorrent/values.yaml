@@ -22,3 +22,8 @@ qbittorrent:
       mountPath: /media
       type: pvc
       existingClaim: media
+    media:
+      enabled: true
+      mountPath: /downloads
+      type: pvc
+      existingClaim: downloads
