@@ -21,7 +21,7 @@ spec:
     - "ReadWriteMany" #"ReadWriteMany"
   resources:
     requests:
-      storage: 1Gi #1Gi
+      storage: 200Gi #1Gi
   storageClassName: volume-hostpath
   #volumeName: jellyfin-media
 ---
@@ -36,6 +36,6 @@ spec:
     - "ReadWriteMany" #"ReadWriteMany"
   resources:
     requests:
-      storage: 1Gi #1Gi
+      storage: 200Gi #1Gi
   storageClassName: volume-hostpath
   #volumeName: jellyfin-media
