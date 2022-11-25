@@ -19,11 +19,6 @@ qbittorrent:
   persistence:
     media:
       enabled: true
-       mountPath: /media
-       type: pvc
-       existingClaim: media
-    downloads:
-      enabled: true
-       mountPath: /downloads
-       type: pvc
-       existingClaim: downloads
+      mountPath: /media
+      type: pvc
+      existingClaim: media
