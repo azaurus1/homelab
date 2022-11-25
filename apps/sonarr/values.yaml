@@ -8,11 +8,6 @@ sonarr:
           targetPort: 8989
           nodePort: 30003
   persistence:
-    config:
-       enabled: true
-       storageClass: volume-hostpath
-       accessMode: ReadWriteOnce
-       size: 1Gi
     media:
        enabled: true
        mountPath: /media
