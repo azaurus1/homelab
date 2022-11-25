@@ -1,0 +1,15 @@
+emby:
+   service:
+    main:
+      type: NodePort
+      ports:
+        http:
+          port: 8096
+          targetPort: 8096
+          nodePort: 30005
+   persistence:
+     media:
+       enabled: true
+       mountPath: /media
+       type: pvc
+       existingClaim: media
