@@ -8,7 +8,7 @@ qbittorrent:
           nodePort: 30001
           targetPort: 8080
     bittorrent:
-      enabled: false
+      enabled: true
       type: ClusterIP
       ports:
         bittorrent:
