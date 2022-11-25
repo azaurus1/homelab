@@ -7,3 +7,16 @@ radarr:
           port: 7878
           targetPort: 7878
           nodePort: 30002
+  persistence:
+    config:
+       enabled: true
+       mountPath: /config
+       storageClass: volume-hostpath
+       accessMode: ReadWriteOnce
+       size: 1Gi
+    media:
+       enabled: true
+       mountPath: /media
+       type: pvc
+       existingClaim: media
+      
