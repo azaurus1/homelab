@@ -21,7 +21,6 @@ jellyfin:
        size: 1Gi
      config:
        enabled: true
-       mountPath: /config
        storageClass: volume-hostpath
        accessMode: ReadWriteOnce
        size: 1Gi
