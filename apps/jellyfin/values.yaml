@@ -13,15 +13,15 @@ jellyfin:
        mountPath: /media
        type: pvc
        existingClaim: media 
-     #cache:
-     #  enabled: true
-     #  mountPath: /cache
-     #  storageClass: volume-hostpath
-     #  accessMode: ReadWriteOnce
-     #  size: 1Gi
-     #config:
-     #  enabled: true
-     #  mountPath: /config
-     #  storageClass: volume-hostpath
-     #  accessMode: ReadWriteOnce
-     #  size: 1Gi
+     cache:
+       enabled: true
+       mountPath: /cache
+       storageClass: volume-hostpath
+       accessMode: ReadWriteOnce
+       size: 1Gi
+     config:
+       enabled: true
+       mountPath: /config
+       storageClass: volume-hostpath
+       accessMode: ReadWriteOnce
+       size: 1Gi
