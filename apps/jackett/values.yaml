@@ -1,1 +1,15 @@
 jackett:
+  service:
+    main:
+      type: NodePort
+      ports:
+        http:
+          port: 9117
+          targetPort: 9117
+          nodePort: 30006
+  persistence:
+    config:
+      enabled: false
+    torrentblackhole:
+      enabled: true
+      mountPath: /downloads
