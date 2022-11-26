@@ -32,5 +32,5 @@ Applications are mapped to the following nodePorts:
 * qbittorrent -> 30001
 * radarr -> 30002
 * sonarr -> 30003
-* prowlarr -> 30004
+* jackett -> 30006
 
