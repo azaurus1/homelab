@@ -13,3 +13,5 @@ jackett:
     torrentblackhole:
       enabled: true
       mountPath: /downloads
+      type: pvc
+      existingClaim: downloads
