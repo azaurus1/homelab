@@ -1,0 +1,6 @@
+elementweb:
+  config:
+    default:
+      base_url: matrix.home.lab
+      server_name: home.lab
+  
