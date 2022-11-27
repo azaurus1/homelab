@@ -3,4 +3,11 @@ elementweb:
     default:
       base_url: matrix.home.lab
       server_name: home.lab
-  
+  service:
+    main:
+      type: NodePort
+      ports:
+        http:
+          port: 80
+          targetPort: 80
+          nodePort: 30007
