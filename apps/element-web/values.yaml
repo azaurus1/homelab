@@ -1,8 +1,10 @@
 element-web:
   service:
     type: NodePort
-    ports:
-      http:
-        port: 80
-        targetPort: 80
-        nodePort: 30008
+    port: 80
+    targetPort: 80
+    nodePort: 30008
+  configjson:
+    m.homeserver:
+      base_url: "http://pranj.io"
+      server_name: "pranj.io"
