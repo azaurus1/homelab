@@ -6,5 +6,5 @@ element-web:
   configjson:
     default_server_config:
       m.homeserver:
-        base_url: "https://pranj.io"
-        server_name: "pranj.io"
+        base_url: "https://azaurus.dev"
+        server_name: "azaurus.dev"
