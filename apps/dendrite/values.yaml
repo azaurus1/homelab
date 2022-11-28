@@ -1,0 +1,9 @@
+dendrite:
+  service:
+    main:
+      type: NodePort
+      ports:
+        http:
+          port: 7779
+          targetPort: 7779
+          nodePort: 30007
