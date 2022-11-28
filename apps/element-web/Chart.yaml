@@ -1,0 +1,7 @@
+apiVersion: v2
+name: element-web
+version: 0.0.0
+dependencies:
+  - name: element-web
+    version: 1.0.48
+    repository: https://halkeye.github.io/helm-charts/  
