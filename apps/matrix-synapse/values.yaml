@@ -1,1 +1,9 @@
 matrix-synapse:
+  service:
+    main:
+      type: NodePort
+      ports:
+        http:
+          port: 8080
+          nodePort: 30009
+          targetPort: 8080
