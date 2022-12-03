@@ -4,6 +4,6 @@ matrix-synapse:
       type: NodePort
       ports:
         http:
-          port: 8080
+          port: 8008
           nodePort: 30009
-          targetPort: 8080
+          targetPort: 8008
