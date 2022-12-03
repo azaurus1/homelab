@@ -1,4 +1,5 @@
 matrix-synapse:
+  serverName: 'azaurus.dev'
   service:
     main:
       type: NodePort
