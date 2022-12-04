@@ -43,7 +43,7 @@ spec:
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: config
+  name: config-sonarr
   annotations:
     argocd.argoproj.io/sync-options: Prune=false
 spec:
@@ -51,6 +51,21 @@ spec:
     - "ReadWriteMany" #"ReadWriteMany"
   resources:
     requests:
-      storage: 300Gi #1Gi
+      storage: 3Gi #1Gi
   storageClassName: volume-hostpath
   #volumeName: jellyfin-media
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: config-radarr
+  annotations:
+    argocd.argoproj.io/sync-options: Prune=false
+spec:
+  accessModes:
+    - "ReadWriteMany" #"ReadWriteMany"
+  resources:
+    requests:
+      storage: 3Gi #1Gi
+  storageClassName: volume-hostpath
+  #volumeName: jellyfin-media  
