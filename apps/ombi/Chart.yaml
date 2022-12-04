@@ -1,7 +1,7 @@
 apiVersion: v2
-name: overseerr
+name: ombi
 version: 0.0.0
 dependencies:
-  - name: overseerr
-    version: 5.4.2
+  - name: ombi
+    version: 11.5.2
     repository: https://k8s-at-home.com/charts/

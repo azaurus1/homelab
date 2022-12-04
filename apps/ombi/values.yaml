@@ -1,0 +1,9 @@
+ombi:
+  service:
+    main:
+      type: NodePort
+      ports:
+        http:
+          port: 3579
+          targetPort: 3579
+          nodePort: 30002
