@@ -6,7 +6,7 @@ overseerr:
         http:
           port: 5055
           targetPort: 5055
-          nodePort: 30010
+          nodePort: 30011
   #persistence:
   #  media:
   #     enabled: true
