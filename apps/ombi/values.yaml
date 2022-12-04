@@ -6,4 +6,4 @@ ombi:
         http:
           port: 3579
           targetPort: 3579
-          nodePort: 30002
+          nodePort: 30011
