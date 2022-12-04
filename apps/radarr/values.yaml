@@ -13,4 +13,13 @@ radarr:
        mountPath: /media
        type: pvc
        existingClaim: media
+    downloads:
+       enabled: true
+       mountPath: /downloads
+       type: pvc
+       existingClaim: downloads
+    config:
+       enabled: true
+       type: pvc
+       existingClaim: config-radarr
       

@@ -21,4 +21,4 @@ sonarr:
     config:
        enabled: true
        type: pvc
-       existingClaim: config
+       existingClaim: config-sonarr
