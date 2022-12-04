@@ -7,3 +7,18 @@ ombi:
           port: 3579
           targetPort: 3579
           nodePort: 30011
+  persistence:
+    media:
+       enabled: true
+       mountPath: /media
+       type: pvc
+       existingClaim: media
+    downloads:
+       enabled: true
+       mountPath: /downloads
+       type: pvc
+       existingClaim: downloads
+    config:
+       enabled: true
+       type: pvc
+       existingClaim: config-ombi

@@ -69,3 +69,18 @@ spec:
       storage: 3Gi #1Gi
   storageClassName: volume-hostpath
   #volumeName: jellyfin-media  
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: config-ombi
+  annotations:
+    argocd.argoproj.io/sync-options: Prune=false
+spec:
+  accessModes:
+    - "ReadWriteMany" #"ReadWriteMany"
+  resources:
+    requests:
+      storage: 3Gi #1Gi
+  storageClassName: volume-hostpath
+  #volumeName: jellyfin-media  
