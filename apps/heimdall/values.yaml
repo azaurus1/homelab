@@ -9,4 +9,6 @@ heimdall:
           nodePort: 30004
   persistence:
     config:
-      enabled: false
+      enabled: true
+      type: pvc
+      existingClaim: config-heimdall
