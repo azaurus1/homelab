@@ -12,4 +12,14 @@ matrix-synapse:
     existingSecret: matrix-secret-signing-key
     job:
       enabled: false
-      
+
+  postgresql:
+    enabled: true
+    existingSecret: postgresql-secret
+    postgresqlUsername: synapse
+    postgresqlDatabase: synapse
+    postgresqlInitdbArgs: "--lc-collate=C --lc-ctype=C"
+    persistence:
+      size: 16Gi
+      type: pvc
+      storageClassName: volume-hostpath
