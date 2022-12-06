@@ -23,3 +23,10 @@ matrix-synapse:
       size: 16Gi
       type: pvc
       storageClassName: volume-hostpath
+  
+  redis:
+    enabled: true
+    auth:
+      enabled: true
+      existingSecret: redis-secret
+      
