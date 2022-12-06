@@ -1,5 +1,7 @@
 matrix-synapse:
   serverName: 'azaurus.dev'
+  config:
+    publicBaseurl: https://matrix.azaurus.dev
   service:
     main:
       type: NodePort
