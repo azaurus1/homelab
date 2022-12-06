@@ -18,6 +18,8 @@ ingress:
     service: http://localhost:30004
   - hostname: ombi.azaurus.dev
     service: http://localhost:30011
+  - hostname: vikunja.azaurus.dev
+    service: http://localhost:30012
   - service: http_status:404
 
 
