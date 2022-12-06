@@ -12,6 +12,10 @@ matrix-synapse:
     existingSecret: matrix-secret-signing-key
     job:
       enabled: false
+  
+  persistence:
+    enabled: true
+    existingClaim: matrix-synapse-data
 
   postgresql:
     enabled: true
@@ -20,13 +24,11 @@ matrix-synapse:
     postgresqlDatabase: synapse
     postgresqlInitdbArgs: "--lc-collate=C --lc-ctype=C"
     persistence:
-      size: 16Gi
-      type: pvc
-      storageClassName: volume-hostpath
+      existingClaim: matrix-postgresql
   
   redis:
     enabled: true
     auth:
       enabled: true
       existingSecret: redis-secret
-      
+

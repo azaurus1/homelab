@@ -99,3 +99,33 @@ spec:
       storage: 3Gi #1Gi
   storageClassName: volume-hostpath
   #volumeName: jellyfin-media   
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: matrix-synapse-data
+  annotations:
+    argocd.argoproj.io/sync-options: Prune=false
+spec:
+  accessModes:
+    - "ReadWriteMany" #"ReadWriteMany"
+  resources:
+    requests:
+      storage: 10Gi #1Gi
+  storageClassName: volume-hostpath
+  #volumeName: jellyfin-media   
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: matrix-postgresql
+  annotations:
+    argocd.argoproj.io/sync-options: Prune=false
+spec:
+  accessModes:
+    - "ReadWriteMany" #"ReadWriteMany"
+  resources:
+    requests:
+      storage: 16Gi #1Gi
+  storageClassName: volume-hostpath
+  #volumeName: jellyfin-media   
