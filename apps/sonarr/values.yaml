@@ -3,11 +3,11 @@ sonarr:
     main:
       enabled: true
       hosts:
-        - host: test.local
+        - host: sonarr.test.local
           paths:
-            - path: /sonarr
+            - path: /
               pathType: Prefix
-      ingressClassName: nginx
+      ingressClassName: public
   persistence:
     media:
        enabled: true
