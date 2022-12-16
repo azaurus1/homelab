@@ -2,7 +2,6 @@ sonarr:
   ingress:
     main:
       enabled: true
-      ingressClassName: nginx
       hosts:
         - host: sonarr.test.local
           paths:
