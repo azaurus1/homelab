@@ -1,8 +1,9 @@
 cloudflared:
   tunnelID: "f711274a-e21a-4d8a-85e6-b6492dc059be"
   existingSecret: tunnel-secret
-  credentials-file: ~/.cloudflared/f711274a-e21a-4d8a-85e6-b6492dc059be.json
   ingress:
     - hostname: sonarr.azaurus.dev
       service: http://sonarr.default.svc.cluster.local:8989 # this should be the correct dns and port for your service
+    - hostname: radarr.azaurus.dev
+      service: http://radarr.default.svc.cluster.local:7878 # this should be the correct dns and port for your service
     - service: http_status:404
