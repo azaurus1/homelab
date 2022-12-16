@@ -3,7 +3,7 @@ cloudflared:
   auth:
     accountTag: "0cc2af205c8980e76b19852b3183bcfd"
     tunnelName: "homelab"
-    tunnelSecret: ""
+    tunnelSecret: "test"
   ingress:
     - hostname: sonarr.azaurus.dev
       service: http://sonarr.default.svc.cluster.local:8989 # this should be the correct dns and port for your service
