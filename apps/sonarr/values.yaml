@@ -3,7 +3,7 @@ sonarr:
     main:
       enabled: true
       hosts:
-        - host: &host sonarr.test.local
+        - host: "sonarr.test.local"
           paths:
             - path: /
               pathType: Prefix
