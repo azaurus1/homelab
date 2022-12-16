@@ -1,13 +1,12 @@
 sonarr:
-  ingress:
+  service:
     main:
-      enabled: true
-      hosts:
-        - host: test.local
-          paths:
-            - path: /sonarr
-              pathType: Prefix
-      ingressClassName: public
+      type: NodePort
+      ports:
+        http:
+          port: 8989
+          targetPort: 8989
+          nodePort: 30003
   persistence:
     media:
        enabled: true
