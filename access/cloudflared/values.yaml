@@ -1,1 +1,2 @@
-existingSecret: "tunnel-credentials"
+cloudflared:
+  existingSecret: "tunnel-credentials"
