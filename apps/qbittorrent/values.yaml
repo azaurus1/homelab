@@ -2,30 +2,12 @@ qbittorrent:
   ingress:
     main:
       enabled: true
-         hosts:
-          - host: test.local
-            paths:
-              - path: /qbittorrent
-                pathType: Prefix
+      hosts:
+        - host: test.local
+          paths:
+            - path: /qbittorrent
+              pathType: Prefix
       ingressClassName: nginx
-  service:
-    main:
-      type: NodePort
-      ports:
-        http:
-          port: 8080
-          nodePort: 30001
-          targetPort: 8080
-    bittorrent:
-      enabled: true
-      type: NodePort
-      ports:
-        bittorrent:
-          enabled: true
-          port: 6881
-          protocol: TCP
-          targetPort: 6881
-          nodePort: 30010
   persistence:
     media:
       enabled: true
