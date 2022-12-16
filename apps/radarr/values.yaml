@@ -1,13 +1,12 @@
 radarr:
-  ingress:
+  service:
     main:
-      enabled: true
-      hosts: 
-        - host: test.local
-          paths:
-            - path: /radarr
-              pathType: Prefix
-      ingressClassName: public
+      type: NodePort
+      ports:
+        http:
+          port: 7878
+          targetPort: 7878
+          nodePort: 30002
   persistence:
     media:
        enabled: true
