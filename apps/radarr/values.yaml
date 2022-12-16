@@ -7,15 +7,7 @@ radarr:
           paths:
             - path: /radarr
               pathType: Prefix
-    ingressClassName: public
-  service:
-    main:
-      type: NodePort
-      ports:
-        http:
-          port: 7878
-          targetPort: 7878
-          nodePort: 30002
+      ingressClassName: public
   persistence:
     media:
        enabled: true
