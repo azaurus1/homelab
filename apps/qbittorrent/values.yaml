@@ -1,4 +1,13 @@
 qbittorrent:
+  ingress:
+    main:
+      enabled: true
+         hosts:
+          - host: test.local
+            paths:
+              - path: /sonarr
+                pathType: Prefix
+      ingressClassName: nginx
   service:
     main:
       type: NodePort
