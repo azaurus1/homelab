@@ -3,9 +3,9 @@ sonarr:
     main:
       enabled: true
       hosts:
-        - host: sonarr.test.local
+        - host: test.local
           paths:
-            - path: /
+            - path: /sonarr
               pathType: Prefix
       ingressClassName: public
   persistence:
