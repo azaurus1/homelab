@@ -5,7 +5,7 @@ qbittorrent:
          hosts:
           - host: test.local
             paths:
-              - path: /sonarr
+              - path: /qbittorrent
                 pathType: Prefix
       ingressClassName: nginx
   service:
