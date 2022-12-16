@@ -1,14 +1,14 @@
 ---
 # For setting microk8s homepath storage path
-kind: StorageClass
-apiVersion: storage.k8s.io/v1
-metadata:
-  name: volume-hostpath
-provisioner: microk8s.io/hostpath
-reclaimPolicy: Delete
-parameters:
-  pvDir: /mnt/volume
-volumeBindingMode: Immediate
+#kind: StorageClass
+#apiVersion: storage.k8s.io/v1
+#metadata:
+#  name: volume-hostpath
+#provisioner: microk8s.io/hostpath
+#reclaimPolicy: Delete
+#parameters:
+#  pvDir: /mnt/volume
+#volumeBindingMode: Immediate
 ---
 kind: PersistentVolumeClaim
 apiVersion: v1
@@ -22,7 +22,7 @@ spec:
   resources:
     requests:
       storage: 300Gi #1Gi
-  storageClassName: volume-hostpath
+  storageClassName: nfs-client
   #volumeName: jellyfin-media
 ---
 kind: PersistentVolumeClaim
@@ -37,7 +37,7 @@ spec:
   resources:
     requests:
       storage: 300Gi #1Gi
-  storageClassName: volume-hostpath
+  storageClassName: nfs-client
   #volumeName: jellyfin-media
 ---
 kind: PersistentVolumeClaim
@@ -52,7 +52,7 @@ spec:
   resources:
     requests:
       storage: 3Gi #1Gi
-  storageClassName: volume-hostpath
+  storageClassName: nfs-client
   #volumeName: jellyfin-media
 ---
 kind: PersistentVolumeClaim
@@ -67,7 +67,7 @@ spec:
   resources:
     requests:
       storage: 3Gi #1Gi
-  storageClassName: volume-hostpath
+  storageClassName: nfs-client
   #volumeName: jellyfin-media  
 ---
 kind: PersistentVolumeClaim
@@ -82,7 +82,7 @@ spec:
   resources:
     requests:
       storage: 3Gi #1Gi
-  storageClassName: volume-hostpath
+  storageClassName: nfs-client
   #volumeName: jellyfin-media 
 ---
 kind: PersistentVolumeClaim
@@ -97,7 +97,7 @@ spec:
   resources:
     requests:
       storage: 3Gi #1Gi
-  storageClassName: volume-hostpath
+  storageClassName: nfs-client
   #volumeName: jellyfin-media   
 ---
 kind: PersistentVolumeClaim
@@ -112,7 +112,7 @@ spec:
   resources:
     requests:
       storage: 10Gi #1Gi
-  storageClassName: volume-hostpath
+  storageClassName: nfs-client
   #volumeName: jellyfin-media   
 ---
 kind: PersistentVolumeClaim
@@ -127,5 +127,5 @@ spec:
   resources:
     requests:
       storage: 16Gi #1Gi
-  storageClassName: volume-hostpath
+  storageClassName: nfs-client
   #volumeName: jellyfin-media   
