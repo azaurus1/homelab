@@ -4,7 +4,7 @@ sonarr:
       enabled: true
       ingressClassName: nginx
       hosts:
-        - host: sonarr.test.ingress
+        - host: sonarr.test.local
           paths:
             - path: /
               pathType: Prefix
