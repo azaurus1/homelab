@@ -7,6 +7,15 @@ sonarr:
           port: 8989
           targetPort: 8989
           nodePort: 30003
+  ingress:
+    main:
+      enabled: true
+      ingressClassName: nginx
+      hosts:
+        - host: sonarr.test.ingress
+          paths:
+            - path: /
+              pathType: Prefix
   persistence:
     media:
        enabled: true
