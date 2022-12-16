@@ -1,4 +1,12 @@
 radarr:
+  ingress:
+    enabled: true
+    hosts: 
+      - host: test.local
+        paths:
+          - path: /radarr
+            pathType: Prefix
+    ingressClassName: public
   service:
     main:
       type: NodePort
