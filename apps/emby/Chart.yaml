@@ -1,7 +1,7 @@
 apiVersion: v2
 name: emby
-version: 0.0.0
+version: 13.0.7
 dependencies:
-  - name: emby
-    version: 3.4.2
-    repository: https://k8s-at-home.com/charts/
+  - name: common
+    repository: https://library-charts.truecharts.org
+    version: 11.0.7
