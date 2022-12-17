@@ -3,5 +3,5 @@ name: emby
 version: 13.0.7
 dependencies:
   - name: TrueCharts/emby
-    repository: https://charts.truecharts.org
+    repository: https://library-charts.truecharts.org
     version: 13.0.7
