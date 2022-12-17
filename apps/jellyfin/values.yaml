@@ -8,6 +8,10 @@ jellyfin:
           targetPort: 8096
           nodePort: 30000
    persistence:
+     config:
+       enabled: true
+       type: pvc
+       existingClaim: config-jellyfin
      media:
        enabled: true
        type: pvc
