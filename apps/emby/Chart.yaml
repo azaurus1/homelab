@@ -2,6 +2,6 @@ apiVersion: v2
 name: emby
 version: 10.0.12
 dependencies:
-  - name: emby
+  - name: truecharts/emby
     version: 10.0.12
     repository: https://charts.truecharts.org/
