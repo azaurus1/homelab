@@ -1,4 +1,4 @@
-emby:
+jellyfin:
    service:
     main:
       type: NodePort
@@ -8,10 +8,6 @@ emby:
           targetPort: 8096
           nodePort: 30000
    persistence:
-     config:
-       enabled: true
-       type: pvc
-       existingClaim: config-emby
      media:
        enabled: true
        type: pvc
