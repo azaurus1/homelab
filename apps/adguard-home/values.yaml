@@ -1,0 +1,29 @@
+adguard-home:
+  service:
+    main:
+      type: NodePort
+      ports:
+        http:
+          port: 3000
+          targetPort: 3000
+          nodePort: 30015
+    dns-tcp:
+      enabled: true
+      type: NodePort
+      ports:
+        dns-tcp:
+          enabled: true
+          port: 53
+          protocol: TCP
+          targetPort: 53
+      externalTrafficPolicy: Local
+    dns-udp:
+      enabled: true
+      type: NodePort
+      ports:
+        dns-udp:
+          enabled: true
+          port: 53
+          protocol: UDP
+          targetPort: 53
+      externalTrafficPolicy: Local
