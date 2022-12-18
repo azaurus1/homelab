@@ -18,8 +18,8 @@ radarr:
        mountPath: /downloads
        type: pvc
        existingClaim: downloads
-    config:
-       enabled: true
-       type: pvc
-       existingClaim: config-radarr
+    #config:
+    #   enabled: true
+    #   type: pvc
+    #   existingClaim: config-radarr
       
