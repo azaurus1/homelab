@@ -27,3 +27,5 @@ adguard-home:
           protocol: UDP
           targetPort: 53
       externalTrafficPolicy: Local
+  hostNetwork: true
+  dnsPolicy: ClusterFirstWithHostNet
