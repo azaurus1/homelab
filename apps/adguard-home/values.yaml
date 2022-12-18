@@ -16,7 +16,6 @@ adguard-home:
           port: 53
           protocol: TCP
           targetPort: 53
-          nodePort: 30053
       externalTrafficPolicy: Local
     dns-udp:
       enabled: true
@@ -27,5 +26,4 @@ adguard-home:
           port: 53
           protocol: UDP
           targetPort: 53
-          nodePort: 30054
       externalTrafficPolicy: Local
