@@ -9,8 +9,8 @@ ntfy:
   # @default -- See values.yaml
   persistence:
     cache:
-      enabled: true
+      enabled: false
       mountPath: /var/cache/ntfy
     config:
-      enabled: true
+      enabled: false
       mountPath: /etc/ntfy
