@@ -9,8 +9,12 @@ ntfy:
   # @default -- See values.yaml
   persistence:
     cache:
-      enabled: false
+      enabled: true
       mountPath: /var/cache/ntfy
+      accessMode: ReadWriteOnce
+      size: 5Gi
     config:
-      enabled: false
+      enabled: true
       mountPath: /etc/ntfy
+      accessMode: ReadWriteOnce
+      size: 5Gi
