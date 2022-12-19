@@ -1,0 +1,16 @@
+ntfy:
+  service:
+    main:
+      ports:
+        http:
+          port: 80
+
+# -- Configure persistence settings for the chart under this key.
+# @default -- See values.yaml
+persistence:
+  cache:
+    enabled: true
+    mountPath: /var/cache/ntfy
+  config:
+    enabled: true
+    mountPath: /etc/ntfy
