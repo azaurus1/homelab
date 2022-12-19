@@ -9,3 +9,4 @@ stacks:
   - name: system
   - name: secrets
   - name: access
+  - name: monitoring
