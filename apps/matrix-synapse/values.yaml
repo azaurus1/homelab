@@ -11,8 +11,9 @@ matrix-synapse:
           nodePort: 30009
           targetPort: 8008
   signingkey:
+    existingSecret: matrix-secret-signing-key
     job:
-      enabled: true
+      enabled: false
   
   persistence:
     enabled: true
