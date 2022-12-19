@@ -25,4 +25,6 @@ cloudflared:
       service: http://jellyfin.default.svc.cluster.local:8096 # this should be the correct dns and port for your service
     - hostname: uptime.azaurus.dev
       service: http://uptime-kuma.default.svc.cluster.local:3001 # this should be the correct dns and port for your service
+    - hostname: heimdall.azaurus.dev
+      service: http://heimdall.default.svc.cluster.local:80 # this should be the correct dns and port for your service
     - service: http_status:404
