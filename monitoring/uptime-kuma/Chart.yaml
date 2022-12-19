@@ -1,7 +1,7 @@
 apiVersion: v2
-name: statping
+name: uptime-kuma
 version: 0.0.0
 dependencies:
-  - name: statping
-    version: 6.1.2
+  - name: uptime-kuma
+    version: 1.4.2
     repository: https://k8s-at-home.com/charts/
