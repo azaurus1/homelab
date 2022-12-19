@@ -23,4 +23,6 @@ cloudflared:
       service: http://matrix-synapse.default.svc.cluster.local:8008 # this should be the correct dns and port for your service
     - hostname: jellyfin.azaurus.dev
       service: http://jellyfin.default.svc.cluster.local:8096 # this should be the correct dns and port for your service
+    - hostname: uptime.azaurus.dev
+      service: http://uptime-kuma.default.svc.cluster.local:3001 # this should be the correct dns and port for your service
     - service: http_status:404
