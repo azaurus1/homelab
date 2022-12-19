@@ -1,0 +1,16 @@
+statping:
+  service:
+    main:
+      type: NodePort
+      ports:
+        http:
+          port: 8080
+          targetPort: 8080
+          nodePort: 30016
+  postgresql:
+    enabled: true
+    auth:
+      postgresPassword: "changeme"
+      database: postgres
+    persistence:
+      enabled: false
