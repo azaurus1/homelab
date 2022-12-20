@@ -1,0 +1,10 @@
+gotify:
+  service:
+    main:
+      ports:
+        http:
+          port: 80
+  persistence:
+    data:
+      enabled: true
+      mountPath: /app/data
