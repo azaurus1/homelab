@@ -1,7 +1,0 @@
-apiVersion: v2
-name: ntfy
-version: 0.0.0
-dependencies:
-  - name: ntfy
-    version: 1.1.2
-    repository: https://k8s-at-home.com/charts/

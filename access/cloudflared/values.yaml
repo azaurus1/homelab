@@ -27,10 +27,6 @@ cloudflared:
       service: http://uptime-kuma.default.svc.cluster.local:3001 # this should be the correct dns and port for your service
     - hostname: heimdall.azaurus.dev
       service: http://heimdall.default.svc.cluster.local:80 # this should be the correct dns and port for your service
-    - hostname: ntfy.azaurus.dev
-      service: http://ntfy.default.svc.cluster.local:80 # this should be the correct dns and port for your service
-    - hostname: notify.azaurus.dev
-      service: http://ntfy.default.svc.cluster.local:80 # this should be the correct dns and port for your service
     - hostname: gotify.azaurus.dev
       service: http://gotify.default.svc.cluster.local:80 # this should be the correct dns and port for your service
     - service: http_status:404
