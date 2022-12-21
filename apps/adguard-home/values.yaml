@@ -28,3 +28,4 @@ adguard-home:
           targetPort: 53
       externalTrafficPolicy: Local
   hostNetwork: true
+  dnsPolicy: ClusterFirstWithHostNet
