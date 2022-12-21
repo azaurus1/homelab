@@ -1,7 +1,6 @@
 apiVersion: v2
 name: homepage
-version: 0.0.0
-dependencies:
-  - name: homepage
-    version: 1.0.0
-    repository: https://k8s-at-home.com/charts/
+version: 0.1.0
+description: A Helm chart for deploying the homepage Docker image.
+home: https://github.com/benphelps/homepage
+appVersion: 1.0
