@@ -4,4 +4,4 @@ version: 0.0.0
 dependencies:
   - name: homepage
     version: 0.5.5
-    repository: ghcr.io/benphelps/
+    repository: chartmuseum.azaurus.dev/charts/homepage-1.2.2.tgz
