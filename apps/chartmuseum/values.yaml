@@ -1,5 +1,10 @@
 chartmuseum:
+  env:
+    open:
+      DISABLE_API: false
+
   persistence:
     enabled: true
     accessMode: ReadWriteOnce
     size: 8Gi
+  
