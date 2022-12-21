@@ -3,5 +3,5 @@ name: homepage
 version: 0.0.0
 dependencies:
   - name: homepage
-    version: 0.5.5
-    repository: chartmuseum.azaurus.dev/charts/homepage-1.2.2.tgz
+    version: 1.2.2
+    repository: https://chartmuseum.azaurus.dev/charts/
