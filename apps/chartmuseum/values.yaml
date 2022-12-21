@@ -1,0 +1,5 @@
+chartmuseum:
+  persistence:
+    enabled: true
+    accessMode: ReadWriteOnce
+    size: 8Gi
