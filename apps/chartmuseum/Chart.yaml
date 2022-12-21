@@ -3,4 +3,5 @@ name: chartmuseum
 version: 0.0.0
 dependencies:
   - name: chartmuseum
+    version: 3.9.2
     repository: https://chartmuseum.github.io/charts
