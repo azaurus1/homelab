@@ -1,0 +1,9 @@
+nzbget:
+  service:
+    main:
+      ports:
+        http:
+          port: 6789
+  persistence:
+    config:
+      enabled: false
