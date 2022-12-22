@@ -1,1 +1,9 @@
 nzbhydra2:
+  service:
+    main:
+      ports:
+        http:
+          port: 5076
+  persistence:
+    config:
+      enabled: true
