@@ -33,4 +33,6 @@ cloudflared:
       service: http://bazarr.default.svc.cluster.local:6767 # this should be the correct dns and port for your service
     - hostname: chartmuseum.azaurus.dev
       service: http://chartmuseum.default.svc.cluster.local:8080 # this should be the correct dns and port for your service
+    - hostname: homepage.azaurus.dev
+      service: http://homepage.default.svc.cluster.local:3000 # this should be the correct dns and port for your service
     - service: http_status:404
