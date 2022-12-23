@@ -7,4 +7,4 @@ element-web:
     default_server_config:
       m.homeserver:
         base_url: "https://azaurus.dev"
-        server_name: "azaurus.dev"
+        server_name: "matrix.azaurus.dev"
