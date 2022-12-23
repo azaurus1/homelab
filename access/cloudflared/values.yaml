@@ -37,4 +37,6 @@ cloudflared:
       service: http://nzbget.default.svc.cluster.local:6789 # this should be the correct dns and port for your service
     - hostname: prometheus.azaurus.dev
       service: http://prometheus-server.default.svc.cluster.local:80 # this should be the correct dns and port for your service
+    - hostname: sonarrmetrics.azaurus.dev
+      service: http://sonarr-metrics.default.svc.cluster.local:9794 # this should be the correct dns and port for your service
     - service: http_status:404
