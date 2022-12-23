@@ -26,4 +26,4 @@ prometheus:
         - job_name: sonarr
           static_configs:
             - targets:
-              - localhost:9090      
+              - sonnar-metrics.default.svc.cluster.local:9794      
