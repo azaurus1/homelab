@@ -18,6 +18,8 @@ radarr:
        mountPath: /downloads
        type: pvc
        existingClaim: downloads
+    config:
+       enabled: true
   metrics:
   # -- Enable and configure Exportarr sidecar and Prometheus serviceMonitor.
   # @default -- See values.yaml
