@@ -37,6 +37,6 @@ cloudflared:
       service: http://nzbget.default.svc.cluster.local:6789 # this should be the correct dns and port for your service
     - hostname: grafana.azaurus.dev
       service: http://grafana.default.svc.cluster.local:80 # this should be the correct dns and port for your service
-    - hostname: matrix-synapse.azaurus.dev
+    - hostname: matrix.azaurus.dev
       service: http://matrix-synapse.default.svc.cluster.local:8008 # this should be the correct dns and port for your service
     - service: http_status:404
