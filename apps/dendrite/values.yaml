@@ -4,4 +4,5 @@ dendrite:
         server_name: 'azaurus.dev'
       matrix_key_secret:
         create: true
+        keyBody: ""
         secretPath: matrix_key.pem
