@@ -37,5 +37,5 @@ prometheus:
           scheme: http
           static_configs:
             - targets:
-              - kube-state-metrics.kube-system.svc.cluster.local:8080
+              - prometheus-kube-state-metrics.default.svc.cluster.local:8080
                     
