@@ -1,4 +1,4 @@
-prometheus-community:
+prometheus:
   service:
     enabled: true
     type: ClusterIP
