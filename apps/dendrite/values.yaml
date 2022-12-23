@@ -2,3 +2,4 @@ dendrite:
   dendrite:
       matrix_key_secret:
         create: true
+        secretPath: matrix_key.pem
