@@ -12,10 +12,6 @@ prometheus:
     existingClaim: ""
     mountPath: /data
     size: 8Gi
-  alertmanager:
-    enabled: false
-  prometheus-pushgateway:
-    enabled: false
   serverFiles:
     prometheus.yml:
       scrape_configs:
