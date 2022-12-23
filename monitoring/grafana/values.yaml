@@ -1,0 +1,16 @@
+grafana:
+  service:
+    enabled: true
+    type: ClusterIP
+    port: 80
+    targetPort: 3000
+  persistence:
+    type: pvc
+    enabled: true
+    # storageClassName: default
+    accessModes:
+      - ReadWriteOnce
+    size: 10Gi
+    # annotations: {}
+    finalizers:
+      - kubernetes.io/pvc-protection
