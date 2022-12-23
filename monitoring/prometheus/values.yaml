@@ -20,10 +20,3 @@ prometheus:
     enabled: false
   prometheus-pushgateway:
     enabled: false
-  serverFiles:
-    prometheus.yml:
-      scrape_configs:
-        - job_name: sonarr
-          static_configs:
-            - targets:
-              - http://sonarr-metrics.default.svc.cluster.local:9794
