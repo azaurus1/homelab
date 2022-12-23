@@ -1,7 +1,7 @@
 dendrite:
     global:
     # -- (required) Configure the server name for the dendrite instance.
-    server_name: azaurus.dev
+    server_name: 'azaurus.dev'
   dendrite:
       matrix_key_secret:
         create: true
