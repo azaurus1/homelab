@@ -12,3 +12,9 @@ prometheus:
     existingClaim: ""
     mountPath: /data
     size: 8Gi
+  prometheus.yml:
+    scrape_configs:
+      - job_name: prometheus
+        static_configs:
+          - targets:
+            - http://sonarr-metrics.default.svc.cluster.local:9794
