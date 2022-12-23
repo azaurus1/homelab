@@ -1,8 +1,0 @@
-dendrite:
-  dendrite:
-      global:
-        server_name: 'azaurus.dev'
-      matrix_key_secret:
-        create: false
-        existingSecret: matrix-secret-signing-key
-        secretPath: signing.key
