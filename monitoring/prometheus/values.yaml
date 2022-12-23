@@ -26,4 +26,9 @@ prometheus:
         - job_name: sonarr
           static_configs:
             - targets:
-              - sonarr-metrics.default.svc.cluster.local:9794      
+              - sonarr-metrics.default.svc.cluster.local:9794
+        - job_name: radarr
+          static_configs:
+            - targets:
+              - radarr-metrics.default.svc.cluster.local:9793
+                    
