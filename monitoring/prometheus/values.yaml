@@ -20,7 +20,7 @@ prometheus:
     enabled: false
   prometheus-pushgateway:
     enabled: false
-  extraScrapeConfigs:
+  extraScrapeConfigs: |
     - job_name: 'prometheus-blackbox-exporter'
       metrics_path: /probe
       static_configs:
