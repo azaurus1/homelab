@@ -1,0 +1,14 @@
+prometheus-community:
+  service:
+    enabled: true
+    type: ClusterIP
+    servicePort: 80
+  persistentVolume:
+    enabled: true
+    accessModes:
+      - ReadWriteOnce
+    labels: {}
+    annotations: {}
+    existingClaim: ""
+    mountPath: /data
+    size: 8Gi
