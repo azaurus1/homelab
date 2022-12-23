@@ -35,4 +35,6 @@ cloudflared:
       service: http://chartmuseum.default.svc.cluster.local:8080 # this should be the correct dns and port for your service
     - hostname: nzbget.azaurus.dev
       service: http://nzbget.default.svc.cluster.local:6789 # this should be the correct dns and port for your service
+    - hostname: prometheus.azaurus.dev
+      service: http://prometheus-server.default.svc.cluster.local:80 # this should be the correct dns and port for your service
     - service: http_status:404
