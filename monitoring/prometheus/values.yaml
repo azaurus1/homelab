@@ -20,3 +20,10 @@ prometheus:
     enabled: false
   prometheus-pushgateway:
     enabled: false
+  serverFiles:
+    prometheus.yml:
+      scrape_configs:
+        - job_name: prometheus
+          static_configs:
+            - targets:
+              - localhost:9090      
