@@ -14,8 +14,6 @@ prometheus:
     size: 8Gi
   alertmanager:
     enabled: false
-  prometheus-node-exporter:
-    enabled: false
   prometheus-pushgateway:
     enabled: false
   serverFiles:
