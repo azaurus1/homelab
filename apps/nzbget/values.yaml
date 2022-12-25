@@ -6,4 +6,16 @@ nzbget:
           port: 6789
   persistence:
     config:
-      enabled: false
+      enabled: true
+      accessMode: ReadWriteOnce
+      size: 2Gi
+    media:
+      enabled: true
+      type: pvc
+      mountPath: /media
+      existingClaim: media
+    downloads:
+      enabled: true
+      mountPath: /downloads
+      type: pvc
+      existingClaim: downloads
