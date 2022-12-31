@@ -21,3 +21,9 @@ nextcloud:
     enabled: true
     type: pvc
     existingClaim: nextcloud-data
+  livenessProbe:
+    enabled: false
+  readinessProbe:
+    enabled: false
+  startupProbe:
+    enabled: false
