@@ -1,0 +1,23 @@
+nextcloud:
+  service:
+    type: ClusterIP
+    port: 8080
+  nextcloud:
+    host: nextcloud.azaurus.dev
+    ## Use an existing secret
+    existingSecret:
+      enabled: true
+      secretName: nextcloud-account
+      usernameKey: username
+      passwordKey: password
+      # tokenKey: serverinfo_token
+      # smtpUsernameKey: smtp_username
+      # smtpPasswordKey: smtp_password
+  internalDatabase:
+    enabled: true
+    name: nextcloud
+  persistence:
+    # Nextcloud Data (/var/www/html)
+    enabled: true
+    type: pvc
+    existingClaim: nextcloud-data
