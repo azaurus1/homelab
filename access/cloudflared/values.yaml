@@ -40,7 +40,7 @@ cloudflared:
     - hostname: matrix.azaurus.dev
       service: http://matrix-synapse.default.svc.cluster.local:8008 # this should be the correct dns and port for your service
     - hostname: matrix.azaurus.dev/.well-known/
-      service: http://matrix-synapse-wellknown-lighttpd.default.svc.cluster.local:80 # this should be the correct dns and port for your service
+      service: http://matrix-synapse-wellknown-lighttpd.default.svc.cluster.local:8448 # this should be the correct dns and port for your service
     - hostname: nextcloud.azaurus.dev
       service: http://nextcloud.default.svc.cluster.local:8080 # this should be the correct dns and port for your service
     - service: http_status:404
