@@ -19,8 +19,8 @@ cloudflared:
       service: http://jackett.default.svc.cluster.local:9117 # this should be the correct dns and port for your service
     - hostname: element.azaurus.dev
       service: http://element-web.default.svc.cluster.local:80 # this should be the correct dns and port for your service
-    - hostname: matrix.azaurus.dev
-      service: http://matrix-synapse.default.svc.cluster.local:8008 # this should be the correct dns and port for your service
+    #- hostname: matrix.azaurus.dev
+    #  service: http://matrix-synapse.default.svc.cluster.local:8008 # this should be the correct dns and port for your service
     - hostname: jellyfin.azaurus.dev
       service: http://jellyfin.default.svc.cluster.local:8096 # this should be the correct dns and port for your service
     - hostname: uptime.azaurus.dev
