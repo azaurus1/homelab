@@ -39,6 +39,8 @@ cloudflared:
       service: http://grafana.default.svc.cluster.local:80 # this should be the correct dns and port for your service
     - hostname: matrix.azaurus.dev
       service: https://ingress-nginx-controller.ingress-nginx.svc.cluster.local:8448 # this should be the correct dns and port for your service
+    - hostname: matrix-well-known.azaurus.dev
+      service: https://matrix-synapse-wellknown-lighttpd.default.svc.cluster.local:8448 # this should be the correct dns and port for your service      
     - hostname: nextcloud.azaurus.dev
       service: http://nextcloud.default.svc.cluster.local:8080 # this should be the correct dns and port for your service
     - service: http_status:404
