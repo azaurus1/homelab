@@ -1,0 +1,14 @@
+readarr:
+  service:
+    main:
+      ports:
+        http:
+          port: 8787
+  persistence:
+    media:
+       enabled: true
+       mountPath: /media
+       type: pvc
+       existingClaim: media
+    config:
+       enabled: true
