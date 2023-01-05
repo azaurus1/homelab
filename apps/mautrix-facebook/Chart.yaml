@@ -1,0 +1,7 @@
+apiVersion: v2
+name: mautrix-facebook
+version: 0.0.0
+dependencies:
+  - name: mautrix-facebook
+    version: 0.1.0
+    repository: https://charts.cronce.io/
