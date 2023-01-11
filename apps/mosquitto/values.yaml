@@ -1,0 +1,19 @@
+mosquitto:
+  service:
+    main:
+      type: NodePort
+      ports:
+        http:
+          enabled: false
+        mqtt:
+          enabled: true
+          port: 1883
+          targetPort: 1833
+          nodePort: 31833
+  persistence:
+    data:
+      enabled: true
+      mountPath: /mosquitto/data
+    configinc:
+      enabled: true
+      mountPath: /mosquitto/configinc
