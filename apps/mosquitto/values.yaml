@@ -15,7 +15,9 @@ mosquitto:
       enabled: true
       mountPath: /mosquitto/data
       accessMode: ReadWriteOnce
+      size: 2Gi
     configinc:
       enabled: true
       mountPath: /mosquitto/configinc
       accessMode: ReadWriteOnce
+      size: 1Gi
