@@ -8,8 +8,8 @@ mosquitto:
         mqtt:
           enabled: true
           port: 1883
-          targetPort: 1833
-          nodePort: 31833
+          targetPort: 1883
+          nodePort: 31883
   persistence:
     data:
       enabled: true
