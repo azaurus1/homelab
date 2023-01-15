@@ -1,0 +1,11 @@
+ghost:
+  main:
+    ports:
+      http:
+        port: 2368
+  persistence:
+    content:
+      enabled: true
+      mountPath: /var/lib/ghost/content
+      type: pvc
+      existingClaim: ghost-content
