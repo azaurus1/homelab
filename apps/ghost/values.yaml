@@ -6,4 +6,4 @@ ghost:
     enabled: true
     type: pvc
     existingClaim: ghost-content
-    mountPath: /content
+    mountPath: /opt/bitnami/ghost
