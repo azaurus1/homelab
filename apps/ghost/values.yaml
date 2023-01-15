@@ -9,3 +9,14 @@ ghost:
       mountPath: /var/lib/ghost/content
       type: pvc
       existingClaim: ghost-content
+  mariadb:
+    enabled: false
+    architecture: standalone
+    auth:
+      database: ghost
+      username: ghost
+      password: ghost
+      rootPassword: ghost-rootpass
+    primary:
+      persistance:
+        enabled: false
