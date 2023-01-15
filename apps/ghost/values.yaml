@@ -4,7 +4,7 @@ ghost:
       http:
         port: 2368
   env:
-    url: "https://ghost.azaurus.dev"
+    url: "https://blog.azaurus.dev"
     database__client: mysql
     database__connection__host: ghost-mariadb
     database__connection__user: ghost
