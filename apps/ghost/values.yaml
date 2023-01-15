@@ -1,6 +1,6 @@
 ghost:
   ghostUsername: azaurus
-  existingSecret: "ghost-password"
+  #existingSecret: "ghost-password"
   ghostHost: "blog.azaurus.dev"
   persistence:
     enabled: false
