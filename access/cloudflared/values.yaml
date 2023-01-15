@@ -20,7 +20,6 @@ cloudflared:
     - hostname: element.azaurus.dev
       service: http://element-web.default.svc.cluster.local:80 # this should be the correct dns and port for your service
     - hostname: matrix.azaurus.dev
-      #service: http://matrix-synapse.default.svc.cluster.local:8008 # this should be the correct dns and port for your service
       service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local    
     - hostname: jellyfin.azaurus.dev
       service: http://jellyfin.default.svc.cluster.local:8096 # this should be the correct dns and port for your service
@@ -37,11 +36,9 @@ cloudflared:
     - hostname: nzbget.azaurus.dev
       service: http://nzbget.default.svc.cluster.local:6789 # this should be the correct dns and port for your service
     - hostname: grafana.azaurus.dev
-      service: http://grafana.default.svc.cluster.local:80 # this should be the correct dns and port for your service
-    #- hostname: matrix.azaurus.dev
-    #  service: https://ingress-nginx-controller.ingress-nginx.svc.cluster.local:443 # this should be the correct dns and port for your service    
+      service: http://grafana.default.svc.cluster.local:80 # this should be the correct dns and port for your service  
     - hostname: nextcloud.azaurus.dev
       service: http://nextcloud.default.svc.cluster.local:8080 # this should be the correct dns and port for your service
-    - hostname: readarr.azaurus.dev
-      service: http://readarr.default.svc.cluster.local:8787 # this should be the correct dns and port for your service
+    - hostname: ghost.azaurus.dev
+      service: http://ghost.default.svc.cluster.local:2368 # this should be the correct dns and port for your service
     - service: http_status:404
