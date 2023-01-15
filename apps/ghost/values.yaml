@@ -1,8 +1,8 @@
-ghost:
-  ghostUsername: azaurus
-  existingSecret: "ghost-password"
-  ghostHost: "blog.azaurus.dev"
-  persistence:
-    enabled: false
-    type: pvc
-    existingClaim: ghost-content
+#ghost:
+#  ghostUsername: azaurus
+#  existingSecret: "ghost-password"
+#  ghostHost: "blog.azaurus.dev"
+#  persistence:
+#    enabled: false
+#    type: pvc
+#    existingClaim: ghost-content
