@@ -4,6 +4,7 @@ ghost:
   service:
     type: ClusterIP
   ghostHost: "blog.azaurus.dev"
+  ghostEnableHttps: true
   persistence:
     enabled: true
     type: pvc
