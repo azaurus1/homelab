@@ -10,7 +10,7 @@ ghost:
       type: pvc
       existingClaim: ghost-content
   mariadb:
-    enabled: false
+    enabled: true
     architecture: standalone
     auth:
       database: ghost
