@@ -4,6 +4,6 @@ ghost:
     type: ClusterIP
   ghostHost: "blog.azaurus.dev"
   persistence:
-    enabled: false
+    enabled: true
     type: pvc
     existingClaim: ghost-content
