@@ -1,6 +1,7 @@
 ghost:
   ghostUsername: azaurus
-  #existingSecret: "ghost-password"
+  service:
+    type: ClusterIp
   ghostHost: "blog.azaurus.dev"
   persistence:
     enabled: false
