@@ -1,5 +1,5 @@
-#ghost:
-#  ghostUsername: azaurus
+ghost:
+  ghostUsername: azaurus
 #  existingSecret: "ghost-password"
 #  ghostHost: "blog.azaurus.dev"
 #  persistence:
