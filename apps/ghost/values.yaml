@@ -1,5 +1,6 @@
 ghost:
   ghostUsername: azaurus
+  ghostEmail: azaurus@azaurus.dev
   service:
     type: ClusterIP
   ghostHost: "blog.azaurus.dev"
