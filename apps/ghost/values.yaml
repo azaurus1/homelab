@@ -1,30 +1,8 @@
 ghost:
-  main:
-    ports:
-      http:
-        port: 2368
-  env:
-    url: "https://blog.azaurus.dev"
-    database__client: mysql
-    database__connection__host: ghost-mariadb
-    database__connection__user: ghost
-    database__connection__password: ghost
-    database__connection__database: ghost
-    NODE_ENV: production
+  ghostUsername: azaurus
+  existingSecret: "ghost-password"
+  ghostHost: "blog.azaurus.dev"
   persistence:
-    content:
-      enabled: true
-      mountPath: /var/lib/ghost/content
-      type: pvc
-      existingClaim: ghost-content
-  mariadb:
     enabled: true
-    architecture: standalone
-    auth:
-      database: ghost
-      username: ghost
-      password: ghost
-      rootPassword: ghost-rootpass
-    primary:
-      persistance:
-        enabled: false
+    type: pvc
+    existingClaim: ghost-content

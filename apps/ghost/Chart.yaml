@@ -3,5 +3,5 @@ name: ghost
 version: 0.0.0
 dependencies:
   - name: ghost
-    version: 2.1.2
-    repository: https://k8s-at-home.com/charts/
+    version: 19.1.58
+    repository: https://charts.bitnami.com/bitnami
