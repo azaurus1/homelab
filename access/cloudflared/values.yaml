@@ -39,6 +39,6 @@ cloudflared:
       service: http://grafana.default.svc.cluster.local:80 # this should be the correct dns and port for your service  
     - hostname: nextcloud.azaurus.dev
       service: http://nextcloud.default.svc.cluster.local:8080 # this should be the correct dns and port for your service
-    - hostname: ghost.azaurus.dev
+    - hostname: blog.azaurus.dev
       service: http://ghost.default.svc.cluster.local:2368 # this should be the correct dns and port for your service
     - service: http_status:404
