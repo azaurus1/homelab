@@ -3,7 +3,6 @@ ghost:
   existingSecret: "ghost-password"
   ghostHost: "blog.azaurus.dev"
   persistence:
-    enabled: true
+    enabled: false
     type: pvc
     existingClaim: ghost-content
-    mountPath: /opt/bitnami/ghost
