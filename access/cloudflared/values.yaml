@@ -41,6 +41,4 @@ cloudflared:
       service: http://nextcloud.default.svc.cluster.local:8080 # this should be the correct dns and port for your service
     - hostname: blog.azaurus.dev
       service: http://ghost.default.svc.cluster.local:443 # this should be the correct dns and port for your service
-    - hostname: kube.azaurus.dev
-      service: http://kubernetes-dashboard.kube-system.svc.cluster.local:443 # this should be the correct dns and port for your service
     - service: http_status:404
