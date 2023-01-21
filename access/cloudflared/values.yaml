@@ -44,5 +44,5 @@ cloudflared:
     - hostname: kube.azaurus.dev
       service: http://kubernetes-dashboard.kube-system.svc.cluster.local:8443 # this should be the correct dns and port for your service
     - hostname: argo.azaurus.dev
-      service: http://argocd-server.argocd.svc.cluster.local:32415 # this should be the correct dns and port for your service
+      service: http://argocd-server.argocd.svc.cluster.local:443 # this should be the correct dns and port for your service
     - service: http_status:404
