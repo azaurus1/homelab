@@ -3,7 +3,7 @@ calibre:
     main:
       ports:
         main:
-          port: 8084
+          port: 8080
           targetPort: 8080
     webserver:
       enabled: true
@@ -12,7 +12,6 @@ calibre:
           enabled: true
           port: 8081
           targetPort: 8081
-
   persistence:
     config:
       enabled: true
