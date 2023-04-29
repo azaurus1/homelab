@@ -3,7 +3,7 @@ cops:
     main:
       ports:
         main:
-          port: 10609
+          port: 80
           protocol: HTTP
           targetPort: 80
 
@@ -16,6 +16,8 @@ cops:
       mountPath: /db
       type: pvc
       existingClaim: calibre-db
+    books:
+      enabled: false
 
   portal:
     enabled: true
