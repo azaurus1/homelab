@@ -1,0 +1,7 @@
+apiVersion: v2
+name: cops
+version: 0.0.0
+dependencies:
+  - name: cops
+    version: 3.0.4
+    repository: https://charts.truecharts.org/

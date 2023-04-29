@@ -1,0 +1,21 @@
+cops:
+  service:
+    main:
+      ports:
+        main:
+          port: 10609
+          protocol: HTTP
+          targetPort: 80
+
+  persistence:
+    config:
+      enabled: true
+      mountPath: /config
+    db:
+      enabled: true
+      mountPath: /db
+      type: pvc
+      existingClaim: calibre-db
+
+  portal:
+    enabled: true
