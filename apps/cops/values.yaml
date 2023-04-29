@@ -11,13 +11,11 @@ cops:
     config:
       enabled: true
       mountPath: /config
-    db:
+    books:
       enabled: true
-      mountPath: /db
+      mountPath: /books
       type: pvc
       existingClaim: calibre-db
-    books:
-      enabled: false
 
   portal:
     enabled: true
