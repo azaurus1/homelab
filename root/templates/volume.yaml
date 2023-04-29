@@ -113,3 +113,17 @@ spec:
       storage: 15Gi #1Gi
   storageClassName: nfs-client 
 ---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: calibre-db
+  annotations:
+    argocd.argoproj.io/sync-options: Prune=false
+spec:
+  accessModes:
+    - "ReadWriteMany" #"ReadWriteMany"
+  resources:
+    requests:
+      storage: 10Gi #1Gi
+  storageClassName: nfs-client 
+---
