@@ -1,7 +1,0 @@
-apiVersion: v2
-name: lazylibrarian
-version: 0.0.0
-dependencies:
-  - name: lazylibrarian
-    version: 7.4.2
-    repository: https://k8s-at-home.com/charts/
