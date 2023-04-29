@@ -41,4 +41,6 @@ cloudflared:
       service: http://nextcloud.default.svc.cluster.local:8080 # this should be the correct dns and port for your service
     - hostname: blog.azaurus.dev
       service: http://ghost.default.svc.cluster.local:443 # this should be the correct dns and port for your service
+    - hostname: lazylibrarian.azaurus.dev
+      service: http://lazylibrarian.default.svc.cluster.local:5299 # this should be the correct dns and port for your service
     - service: http_status:404
