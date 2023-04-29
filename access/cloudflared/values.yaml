@@ -45,6 +45,4 @@ cloudflared:
       service: http://readarr.default.svc.cluster.local:8787 # this should be the correct dns and port for your service
     - hostname: calibre-web.azaurus.dev
       service: http://calibre-web.default.svc.cluster.local:8083 # this should be the correct dns and port for your service
-    - hostname: calibre.azaurus.dev
-      service: http://cops.default.svc.cluster.local:80 # this should be the correct dns and port for your service
     - service: http_status:404
