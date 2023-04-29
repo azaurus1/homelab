@@ -4,3 +4,16 @@ lazylibrarian:
       ports:
         http:
           port: 5299
+  persistence:
+    books:
+       enabled: true
+       mountPath: /books
+       type: pvc
+       existingClaim: books
+    downloads:
+       enabled: true
+       mountPath: /downloads
+       type: pvc
+       existingClaim: downloads
+    config:
+       enabled: true
