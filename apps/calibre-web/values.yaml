@@ -13,3 +13,8 @@ calibre-web:
        mountPath: /books
        type: pvc
        existingClaim: books
+    db:
+      enabled: true
+      mountPath: /db
+      type: pvc
+      existingClaim: calibre-db
