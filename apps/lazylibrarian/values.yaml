@@ -17,3 +17,8 @@ lazylibrarian:
        existingClaim: downloads
     config:
        enabled: true
+    alternate-folder:
+      enabled: true
+      mountPath: /alternate-import
+      type: pvc
+      existingClaim: alternate-books-import
