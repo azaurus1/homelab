@@ -1,0 +1,19 @@
+sonarr:
+  service:
+    main:
+      ports:
+        http:
+          port: 8787
+  persistence:
+    books:
+       enabled: true
+       mountPath: /books
+       type: pvc
+       existingClaim: books
+    downloads:
+       enabled: true
+       mountPath: /downloads
+       type: pvc
+       existingClaim: downloads
+    config:
+       enabled: true
