@@ -1,0 +1,6 @@
+lazylibrarian:
+  service:
+    main:
+      ports:
+        http:
+          port: 5299
