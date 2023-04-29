@@ -1,0 +1,7 @@
+apiVersion: v2
+name: calibre-web
+version: 0.0.0
+dependencies:
+  - name: calibre-web
+    version: 9.0.1
+    repository: https://aste88.github.io/helm-charts/
