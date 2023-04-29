@@ -1,0 +1,7 @@
+apiVersion: v2
+name: kavita
+version: 0.0.0
+dependencies:
+  - name: kavita
+    version: 4.0.10
+    repository: https://charts.truecharts.org/

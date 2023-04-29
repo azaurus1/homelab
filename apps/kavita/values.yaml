@@ -1,0 +1,23 @@
+kavita:
+  service:
+    main:
+      ports:
+        main:
+          targetPort: 5000
+          port: 10189
+
+  persistence:
+    config:
+      enabled: true
+      mountPath: "/kavita/config"
+    manga:
+      enabled: false
+      mountPath: "/manga"
+    books:
+       enabled: true
+       mountPath: /books
+       type: pvc
+       existingClaim: books
+
+  portal:
+    enabled: true
