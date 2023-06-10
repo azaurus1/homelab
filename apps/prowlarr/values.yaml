@@ -1,0 +1,7 @@
+prowlarr:
+  persistence:
+    config:
+      enabled: true
+      mountPath: /config
+      type: pvc
+      existingClaim: config-prowlarr

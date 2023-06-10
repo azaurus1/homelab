@@ -1,0 +1,7 @@
+apiVersion: v2
+name: prowlarr
+version: 0.0.0
+dependencies:
+  - name: prowlarr
+    version: 11.0.20
+    repository: https://charts.truecharts.org/

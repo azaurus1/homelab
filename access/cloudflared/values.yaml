@@ -45,4 +45,6 @@ cloudflared:
       service: http://readarr.default.svc.cluster.local:8787 # this should be the correct dns and port for your service
     - hostname: kavita.azaurus.dev
       service: http://kavita.default.svc.cluster.local:10189 # this should be the correct dns and port for your service
+    - hostname: prowlarr.azaurus.dev
+      service: http://prowlarr.default.svc.cluster.local:9696 # this should be the correct dns and port for your service
     - service: http_status:404
