@@ -14,7 +14,7 @@ nextcloud:
       # smtpUsernameKey: smtp_username
       # smtpPasswordKey: smtp_password
   internalDatabase:
-    enabled: true
+    enabled: false
     name: nextcloud
   persistence:
     # Nextcloud Data (/var/www/html)
@@ -30,13 +30,17 @@ nextcloud:
     
   mariadb:
     ## Whether to deploy a mariadb server to satisfy the applications database requirements. To use an external database set this to false and configure the externalDatabase parameters
-    enabled: false
+    enabled: true
 
     auth:
       database: nextcloud
       username: nextcloud
       password: changeme
     architecture: standalone
+    persistence:
+      enabled: true
+      type: pvc
+      existingClaim: nextcloud-db
   
   redis:
     enabled: false
