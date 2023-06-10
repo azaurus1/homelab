@@ -37,10 +37,11 @@ nextcloud:
       username: nextcloud
       password: changeme
     architecture: standalone
-    persistence:
-      enabled: true
-      type: pvc
-      existingClaim: nextcloud-db
+    primary:
+      persistence:
+        enabled: true
+        type: pvc
+        existingClaim: nextcloud-db
   
   redis:
     enabled: false
