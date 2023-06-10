@@ -155,3 +155,17 @@ spec:
       storage: 4Gi #1Gi
   storageClassName: nfs-client 
 ---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: uptime-kuma-data
+  annotations:
+    argocd.argoproj.io/sync-options: Prune=false
+spec:
+  accessModes:
+    - "ReadWriteMany" #"ReadWriteMany"
+  resources:
+    requests:
+      storage: 4Gi #1Gi
+  storageClassName: nfs-client 
+---

@@ -1,9 +1,16 @@
 uptime-kuma:
   service:
-    main:
-      type: NodePort
-      ports:
-        http:
-          port: 3001
-          targetPort: 3001
-          nodePort: 30016
+    type: ClusterIP
+    port: 3001
+    nodePort:
+    annotations: {}
+  volume:
+    enabled: true
+    # If you want to use a storage class other than the default, uncomment this
+    # line and define the storage class name
+    # storageClassName:
+    # Reuse your own pre-existing PVC.
+    type: pvc
+    existingClaim: uptime-kuma-data
+  
+          
