@@ -20,4 +20,4 @@ ment-vault:
       ## Persistent Volume Storage Size.
       ##
       size: 8Gi
-      existingClaim: mentVault-data
+      existingClaim: ment-vault-data

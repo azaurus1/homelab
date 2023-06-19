@@ -298,7 +298,7 @@ spec:
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: mentVault-data
+  name: ment-vault-data
   annotations:
     argocd.argoproj.io/sync-options: Prune=false
 spec:
