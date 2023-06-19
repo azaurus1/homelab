@@ -155,3 +155,157 @@ spec:
       storage: 4Gi #1Gi
   storageClassName: nfs-client 
 ---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: qbittorrent-config
+  annotations:
+    argocd.argoproj.io/sync-options: Prune=false
+spec:
+  accessModes:
+    - "ReadWriteMany" #"ReadWriteMany"
+  resources:
+    requests:
+      storage: 50Mi #1Gi
+  storageClassName: nfs-client 
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: element-config
+  annotations:
+    argocd.argoproj.io/sync-options: Prune=false
+spec:
+  accessModes:
+    - "ReadWriteMany" #"ReadWriteMany"
+  resources:
+    requests:
+      storage: 50Mi #1Gi
+  storageClassName: nfs-client 
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: ghost-db
+  annotations:
+    argocd.argoproj.io/sync-options: Prune=false
+spec:
+  accessModes:
+    - "ReadWriteMany" #"ReadWriteMany"
+  resources:
+    requests:
+      storage: 8Gi #1Gi
+  storageClassName: nfs-client 
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: heimdall-config
+  annotations:
+    argocd.argoproj.io/sync-options: Prune=false
+spec:
+  accessModes:
+    - "ReadWriteMany" #"ReadWriteMany"
+  resources:
+    requests:
+      storage: 2Gi #1Gi
+  storageClassName: nfs-client 
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: kavita-config
+  annotations:
+    argocd.argoproj.io/sync-options: Prune=false
+spec:
+  accessModes:
+    - "ReadWriteMany" #"ReadWriteMany"
+  resources:
+    requests:
+      storage: 2Gi #1Gi
+  storageClassName: nfs-client 
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: nzbget-config
+  annotations:
+    argocd.argoproj.io/sync-options: Prune=false
+spec:
+  accessModes:
+    - "ReadWriteMany" #"ReadWriteMany"
+  resources:
+    requests:
+      storage: 2Gi #1Gi
+  storageClassName: nfs-client 
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: radarr-config
+  annotations:
+    argocd.argoproj.io/sync-options: Prune=false
+spec:
+  accessModes:
+    - "ReadWriteMany" #"ReadWriteMany"
+  resources:
+    requests:
+      storage: 2Gi #1Gi
+  storageClassName: nfs-client 
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: readarr-config
+  annotations:
+    argocd.argoproj.io/sync-options: Prune=false
+spec:
+  accessModes:
+    - "ReadWriteMany" #"ReadWriteMany"
+  resources:
+    requests:
+      storage: 2Gi #1Gi
+  storageClassName: nfs-client 
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: sonarr-config
+  annotations:
+    argocd.argoproj.io/sync-options: Prune=false
+spec:
+  accessModes:
+    - "ReadWriteMany" #"ReadWriteMany"
+  resources:
+    requests:
+      storage: 8Gi #1Gi
+  storageClassName: nfs-client 
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: gotify-data
+  annotations:
+    argocd.argoproj.io/sync-options: Prune=false
+spec:
+  accessModes:
+    - "ReadWriteMany" #"ReadWriteMany"
+  resources:
+    requests:
+      storage: 8Gi #1Gi
+  storageClassName: nfs-client 
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: mentVault-data
+  annotations:
+    argocd.argoproj.io/sync-options: Prune=false
+spec:
+  accessModes:
+    - "ReadWriteMany" #"ReadWriteMany"
+  resources:
+    requests:
+      storage: 16Gi #1Gi
+  storageClassName: nfs-client 
+---
