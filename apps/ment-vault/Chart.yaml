@@ -2,6 +2,6 @@ apiVersion: v2
 name: ment-vault
 version: 0.1.0
 dependencies:
-  - name: wiki
-    version: 2.2.0
-    repository: https://charts.js.wiki
+  - name: wikijs
+    version: 11.0.22
+    repository: https://charts.truecharts.org/
