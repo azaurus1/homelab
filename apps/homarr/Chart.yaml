@@ -1,7 +1,0 @@
-apiVersion: v2
-name: homarr
-version: 0.0.0
-dependencies:
-  - name: homarr
-    version: 5.0.26
-    repository: https://charts.truecharts.org/
