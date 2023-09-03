@@ -8,3 +8,10 @@ element-web:
       m.homeserver:
         base_url: "https://matrix.azaurus.dev"
         server_name: "matrix.azaurus.dev"
+  persistence:
+    config:
+      enabled: true
+      mountPath: /config
+      type: pvc
+      existingClaim: element-config
+    

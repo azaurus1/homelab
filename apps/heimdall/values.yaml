@@ -10,3 +10,5 @@ heimdall:
   persistence:
     config:
       enabled: true
+      type: pvc
+      existingClaim: heimdall-config

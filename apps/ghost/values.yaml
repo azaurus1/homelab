@@ -9,3 +9,17 @@ ghost:
     enabled: true
     type: pvc
     existingClaim: ghost-content
+  mysql:
+    enabled: true
+    architecture: standalone
+    auth:
+      rootPassword: ""
+      database: bitnami_ghost
+      username: bn_ghost
+      password: ""
+      existingSecret: ""
+    primary:
+      persistence:
+        enabled: true
+        existingClaim: ghost-db
+        type: pvc

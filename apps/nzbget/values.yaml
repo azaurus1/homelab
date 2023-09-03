@@ -7,8 +7,8 @@ nzbget:
   persistence:
     config:
       enabled: true
-      accessMode: ReadWriteOnce
-      size: 2Gi
+      type: pvc
+      existingClaim: nzbget-config
     media:
       enabled: true
       type: pvc

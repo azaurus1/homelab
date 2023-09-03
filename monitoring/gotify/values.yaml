@@ -8,5 +8,5 @@ gotify:
     data:
       enabled: true
       mountPath: /app/data
-      accessMode: ReadWriteOnce
-      size: 5Gi
+      type: pvc
+      existingClaim: gotify-data

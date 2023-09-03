@@ -1,0 +1,14 @@
+calibre-web:
+  service:
+    main:
+      ports:
+        main:
+          targetPort: 8083
+          port: 8083
+
+  persistence:
+    config:
+      enabled: false
+
+  portal:
+    enabled: true

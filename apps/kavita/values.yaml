@@ -10,6 +10,8 @@ kavita:
     config:
       enabled: true
       mountPath: "/kavita/config"
+      type: pvc
+      existingClaim: kavita-config
     manga:
       enabled: false
       mountPath: "/manga"
