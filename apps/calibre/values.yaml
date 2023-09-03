@@ -1,12 +1,1 @@
 calibre:
-  service:
-    main:
-      ports:
-        main:
-          targetPort: 8084
-          port: 8084
-
-  persistence:
-    config:
-      enabled: true
-      mountPath: /config
