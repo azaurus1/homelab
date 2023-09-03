@@ -8,7 +8,11 @@ calibreweb:
 
   persistence:
     config:
-      enabled: false
+      enabled: true
+      mountPath: /config
+    db:
+      enabled: true
+      mountPath: /database
 
   portal:
     enabled: true
