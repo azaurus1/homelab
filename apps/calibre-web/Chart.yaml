@@ -2,6 +2,6 @@ apiVersion: v2
 name: calibreweb
 version: 0.0.0
 dependencies:
-  - name: calibreweb
+  - name: calibre-web
     version: 14.0.27
     repository: https://charts.truecharts.org/
