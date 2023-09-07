@@ -41,5 +41,5 @@ prometheus:
         - job_name: speedtest
           static_configs:
             - targets:
-              - speedtest-exporter.default.svc.cluster.local:9798
+              - speedtest-exporter:9798
                     
