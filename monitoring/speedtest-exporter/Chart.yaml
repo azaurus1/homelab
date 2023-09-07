@@ -1,0 +1,7 @@
+apiVersion: v2
+name: speedtest-exporter 
+version: 0.0.0
+dependencies:
+  - name: speedtest-exporter 
+    version: 6.0.23
+    repository: https://charts.truecharts.org/
