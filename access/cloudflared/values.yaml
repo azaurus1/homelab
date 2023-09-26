@@ -47,6 +47,8 @@ cloudflared:
       service: http://kavita.default.svc.cluster.local:10189 # this should be the correct dns and port for your service
     - hostname: prowlarr.azaurus.dev
       service: http://prowlarr.default.svc.cluster.local:9696 # this should be the correct dns and port for your service
+    - hostname: photoview.azaurus.dev
+      service: http://photoview.default.svc.cluster.local:10159 # this should be the correct dns and port for your service
     # - hostname: ment-vault.azaurus.dev
     #   service: http://ment-vault-wikijs.default.svc.cluster.local:10045 # this should be the correct dns and port for your service
     - service: http_status:404
