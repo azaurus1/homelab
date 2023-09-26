@@ -11,6 +11,7 @@ photoview:
       enabled: true
       type: pvc
       existingClaim: nextcloud-data
+      mountPath: "/nextcloud-data"
 
   cnpg:
     main:
