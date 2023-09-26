@@ -1,5 +1,0 @@
-pihole:
-  persistence:
-    config:
-      enabled: true
-      mountPath: "/etc/pihole"

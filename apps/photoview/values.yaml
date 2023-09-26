@@ -1,0 +1,19 @@
+photoview:
+  persistence:
+    # Don't use emptyDir, it stores, thumbnails and optimized media
+    cache:
+      enabled: true
+      mountPath: "/cache"
+    photos:
+      enabled: true
+      mountPath: "/photos"
+
+  cnpg:
+    main:
+      enabled: true
+      user: photoview
+      database: photoview
+
+  portal:
+    open:
+      enabled: true
