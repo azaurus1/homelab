@@ -1,7 +1,0 @@
-apiVersion: v2
-name: photoview
-version: 0.0.0
-dependencies:
-  - name: photoview
-    version: 9.0.3
-    repository: https://charts.truecharts.org/
