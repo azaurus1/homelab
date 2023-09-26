@@ -7,6 +7,10 @@ photoview:
     photos:
       enabled: true
       mountPath: "/photos"
+    nextcloud-data:
+      enabled: true
+      type: pvc
+      existingClaim: nextcloud-data
 
   cnpg:
     main:
