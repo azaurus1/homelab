@@ -20,10 +20,22 @@ muse:
                 enabled: false
             env:
               DATA_DIR: /config
-              DISCORD_TOKEN: ""
-              SPOTIFY_CLIENT_ID: ""
-              SPOTIFY_CLIENT_SECRET: ""
-              YOUTUBE_API_KEY: ""
+              DISCORD_TOKEN: 
+                secretKeyRef:
+                  name: muse-discord-token
+                  key: token
+              SPOTIFY_CLIENT_ID: 
+                secretKeyRef:
+                    name: muse-spotify-client-id
+                    key: client-id
+              SPOTIFY_CLIENT_SECRET: 
+                secretKeyRef:
+                  name: muse-spotify-client-secret
+                  key: client-secret
+              YOUTUBE_API_KEY: 
+                secretKeyRef:
+                    name: muse-youtube-api-key
+                    key: key
               # CACHE_LIMIT: 2GB
               # BOT_STATUS: online
               # BOT_ACTIVITY_TYPE: PLAYING
