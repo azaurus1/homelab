@@ -20,10 +20,10 @@ muse:
                 enabled: false
             env:
               DATA_DIR: /config
-              # DISCORD_TOKEN: 
-              #   secretKeyRef:
-              #     name: muse-discord-token
-              #     key: token
+              DISCORD_TOKEN: 
+                secretKeyRef:
+                  name: muse-discord-token
+                  key: token
               # SPOTIFY_CLIENT_ID: 
               #   secretKeyRef:
               #       name: muse-spotify-client-id
