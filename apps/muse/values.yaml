@@ -24,6 +24,7 @@ muse:
                 secretKeyRef:
                   name: muse-discord-token
                   key: token
+                  expandObjectName: false
               # SPOTIFY_CLIENT_ID: 
               #   secretKeyRef:
               #       name: muse-spotify-client-id
