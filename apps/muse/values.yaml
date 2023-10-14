@@ -25,18 +25,21 @@ muse:
                   name: muse-discord-token
                   key: token
                   expandObjectName: false
-              # SPOTIFY_CLIENT_ID: 
-              #   secretKeyRef:
-              #       name: muse-spotify-client-id
-              #       key: client-id
-              # SPOTIFY_CLIENT_SECRET: 
-              #   secretKeyRef:
-              #     name: muse-spotify-client-secret
-              #     key: client-secret
-              # YOUTUBE_API_KEY: 
-              #   secretKeyRef:
-              #       name: muse-youtube-api-key
-              #       key: key
+              SPOTIFY_CLIENT_ID: 
+                secretKeyRef:
+                  name: muse-spotify-client-id
+                  key: client-id
+                  expandObjectName: false
+              SPOTIFY_CLIENT_SECRET: 
+                secretKeyRef:
+                  name: muse-spotify-client-secret
+                  key: client-secret
+                  expandObjectName: false
+              YOUTUBE_API_KEY: 
+                secretKeyRef:
+                  name: muse-youtube-api-key
+                  key: key
+                  expandObjectName: false
               # CACHE_LIMIT: 2GB
               # BOT_STATUS: online
               # BOT_ACTIVITY_TYPE: PLAYING
