@@ -50,4 +50,11 @@ prometheus:
           scheme: http
           static_configs:
             - targets: ['ingress-nginx-controller-metrics.ingress-nginx.svc.cluster.local:10254']
+        - job_name: 'prom-node-exporter'
+          scrape_interval: 1m
+          scrape_timeout: 1m
+          metrics_path: /metrics
+          scheme: http
+          static_configs:
+            - targets: ['prometheus-prometheus-node-exporter.default.svc.cluster.local:9100']
                     
