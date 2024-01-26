@@ -57,4 +57,11 @@ prometheus:
           scheme: http
           static_configs:
             - targets: ['prometheus-prometheus-node-exporter.default.svc.cluster.local:9100']
+        - job_name: 'metrics-server'
+          scrape_interval: 1m
+          scrape_timeout: 1m
+          metrics_path: /metrics
+          scheme: http
+          static_configs:
+            - targets: ['metrics-server.kube-system.svc.cluster.local:443']
                     
