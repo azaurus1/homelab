@@ -15,7 +15,7 @@ prometheus:
   alertmanager:
     enabled: false
   prometheus-node-exporter:
-    enabled: false
+    enabled: true
   prometheus-pushgateway:
     enabled: false
   serverFiles:
