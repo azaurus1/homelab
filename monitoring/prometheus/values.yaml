@@ -43,11 +43,11 @@ prometheus:
           scrape_timeout: 1m
           static_configs:
             - targets: ['speedtest-exporter:9798']
-        - job_name: 'cloudflared'
+        - job_name: 'nginx'
           scrape_interval: 1m
           scrape_timeout: 1m
           metrics_path: /metrics
           scheme: http
           static_configs:
-            - targets: ['cloudflared']
+            - targets: ['ingress-nginx-controller-metrics.ingress-nginx.svc.cluster.local:10254']
                     
