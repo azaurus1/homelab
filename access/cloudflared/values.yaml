@@ -22,7 +22,7 @@ cloudflared:
     - hostname: matrix.azaurus.dev
       service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local    
     - hostname: jellyfin.azaurus.dev
-      service: http://jellyfin.default.svc.cluster.local:8096 # this should be the correct dns and port for your service
+      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local  # this should be the correct dns and port for your service
     - hostname: uptime.azaurus.dev
       service: http://uptime-kuma.default.svc.cluster.local:3001 # this should be the correct dns and port for your service
     - hostname: heimdall.azaurus.dev
