@@ -2,6 +2,6 @@ apiVersion: v2
 name: authelia
 version: 0.0.0
 dependencies:
-  - name: authelia 
-    version: 9.0.15
-    repository: tccr.io/truecharts/authelia
+  - name: my-authelia
+    version: "9.0.15"
+    repository: "oci://tccr.io/truecharts"
