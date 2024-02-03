@@ -150,9 +150,9 @@ openldap:
       - "ssl-ldap2.example"
     ldap:
       server: ldap://openldap
-      searchBase: dc=example,dc=org
+      searchBase: dc=azaurus,dc=dev
       # existingSecret: openldaptest
-      bindDN: cn=admin,dc=example,dc=org
+      bindDN: cn=admin,dc=azaurus,dc=dev
       bindPWKey: LDAP_ADMIN_PASSWORD
 
   phpldapadmin:
