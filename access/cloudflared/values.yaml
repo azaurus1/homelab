@@ -51,6 +51,6 @@ cloudflared:
     #   service: http://ment-vault-wikijs.default.svc.cluster.local:10045 # this should be the correct dns and port for your service
     - hostname: plane.azaurus.dev
       service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
-    # - hostname: prometheus.azaurus.dev
-    #   service: http://prometheus-server.default.svc.cluster.local:80
+    - hostname: authentik.azaurus.dev
+      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
     - service: http_status:404
