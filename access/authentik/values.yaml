@@ -9,11 +9,11 @@ authentik:
         password: "ThisIsNotASecurePassword"
   ingress:
       # Specify kubernetes ingress controller class name
-      ingressClassName: nginx | traefik | kong
+      ingressClassName: nginx
       enabled: true
       hosts:
           # Specify external host name
-          - host: authentik.domain.tld
+          - host: authentik.azaurus.dev
             paths:
                 - path: "/"
                   pathType: Prefix
