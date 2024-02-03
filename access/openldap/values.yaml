@@ -160,6 +160,7 @@ openldap:
     ingress:
       enabled: true
       annotations: {}
+      ingressClassName: nginx
       path: /
       ## Ingress Host
       hosts:
