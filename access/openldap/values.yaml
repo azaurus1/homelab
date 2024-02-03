@@ -158,9 +158,8 @@ openldap:
   phpldapadmin:
     enabled: true
     ingress:
-      enabled: true
+      enabled: false
       annotations: {}
-      ingressClassName: nginx
       path: /
       ## Ingress Host
       hosts:
