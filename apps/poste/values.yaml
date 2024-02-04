@@ -8,7 +8,7 @@ poste:
       enabled: true
       mountPath: /data
       type: pvc
-      existingClaim: gotify-data
+      existingClaim: poste-data
   portal:
     open:
       enabled: true
