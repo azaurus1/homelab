@@ -7,7 +7,7 @@ authentik:
         enabled: true
     postgresql:
         password: "ThisIsNotASecurePassword"
-    log_level: "trace"
+    log_level: trace
   ingress:
       # Specify kubernetes ingress controller class name
       ingressClassName: nginx
