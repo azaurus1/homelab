@@ -18,6 +18,10 @@ authentik:
             paths:
                 - path: "/"
                   pathType: Prefix
+      annotations:
+        nginx.ingress.kubernetes.io/configuration-snippet: |
+          proxy_set_header Host authentik-default;                 
+    
 
   postgresql:
       enabled: true
