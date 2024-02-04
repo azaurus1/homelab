@@ -1,0 +1,7 @@
+apiVersion: v2
+name: lldap
+version: 0.0.0
+dependencies:
+  - name: lldap
+    version: 4.1.9
+    repository: https://charts.truecharts.org/

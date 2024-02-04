@@ -1,0 +1,30 @@
+lldap:
+  image:
+    repository: docker.io/nitnelave/lldap
+    pullPolicy: IfNotPresent
+    tag: v0.5.0-debian@sha256:872610a32c9c2bc1392fbd934fa5a355d70b467b92032637ea017c5717c2f1bf
+  service:
+    main:
+      ports:
+        main:
+          port: 17170
+    ldap:
+      enabled: true
+      ports:
+        ldap:
+          enabled: true
+          port: 3890
+  persistence:
+    data:
+      enabled: true
+      mountPath: /data
+      type: pvc
+      existingClaim: lldap-data
+  cnpg:
+    main:
+      enabled: true
+      user: lldap
+      database: lldap
+  portal:
+    open:
+      enabled: true
