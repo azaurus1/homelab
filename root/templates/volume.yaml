@@ -337,3 +337,17 @@ spec:
       storage: 3Gi #1Gi
   storageClassName: nfs-client 
 ---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: frigate-data
+  annotations:
+    argocd.argoproj.io/sync-options: Prune=false
+spec:
+  accessModes:
+    - "ReadWriteMany" #"ReadWriteMany"
+  resources:
+    requests:
+      storage: 32Gi #1Gi
+  storageClassName: nfs-client 
+---
