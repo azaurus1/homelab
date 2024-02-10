@@ -1,0 +1,7 @@
+apiVersion: v2
+name: wallabag
+version: 0.0.0
+dependencies:
+  - name: wallabag
+    version: 0.2.4
+    repository: https://halkeye.github.io/helm-charts/
