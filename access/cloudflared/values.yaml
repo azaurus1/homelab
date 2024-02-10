@@ -59,4 +59,6 @@ cloudflared:
       service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
     # - hostname: poste.azaurus.dev
     #   service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
+    - hostname: changedetection-io.azaurus.dev
+      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
     - service: http_status:404
