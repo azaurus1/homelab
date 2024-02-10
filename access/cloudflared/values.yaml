@@ -6,49 +6,43 @@ cloudflared:
     tunnelSecret: "UPDATE IN KUBERNETES"
   ingress:
     - hostname: sonarr.azaurus.dev
-      service: http://sonarr.default.svc.cluster.local:8989 # this should be the correct dns and port for your service
+      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local  
     - hostname: radarr.azaurus.dev
-      service: http://radarr.default.svc.cluster.local:7878 # this should be the correct dns and port for your service
-    - hostname: emby.azaurus.dev
-      service: http://emby.default.svc.cluster.local:8096 # this should be the correct dns and port for your service
+      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local  
     - hostname: qbittorrent.azaurus.dev
-      service: http://qbittorrent.default.svc.cluster.local:8080 # this should be the correct dns and port for your service
+      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local  
     - hostname: ombi.azaurus.dev
-      service: http://ombi.default.svc.cluster.local:3579 # this should be the correct dns and port for your service
-    - hostname: jackett.azaurus.dev
-      service: http://jackett.default.svc.cluster.local:9117 # this should be the correct dns and port for your service
+      service: http://ombi.default.svc.cluster.local:3579 
     - hostname: element.azaurus.dev
-      service: http://element-web.default.svc.cluster.local:80 # this should be the correct dns and port for your service
+      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local 
     - hostname: matrix.azaurus.dev
       service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local    
     - hostname: jellyfin.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local  # this should be the correct dns and port for your service
+      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local  
     - hostname: uptime.azaurus.dev
-      service: http://uptime-kuma.default.svc.cluster.local:3001 # this should be the correct dns and port for your service
+      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local  
     - hostname: heimdall.azaurus.dev
-      service: http://heimdall.default.svc.cluster.local:80 # this should be the correct dns and port for your service
+      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local  
     - hostname: gotify.azaurus.dev
-      service: http://gotify.default.svc.cluster.local:80 # this should be the correct dns and port for your service
-    - hostname: bazarr.azaurus.dev
-      service: http://bazarr.default.svc.cluster.local:6767 # this should be the correct dns and port for your service
-    - hostname: chartmuseum.azaurus.dev
-      service: http://chartmuseum.default.svc.cluster.local:8080 # this should be the correct dns and port for your service
+      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local 
+    # - hostname: chartmuseum.azaurus.dev
+    #   service: http://chartmuseum.default.svc.cluster.local:8080 
     - hostname: nzbget.azaurus.dev
-      service: http://nzbget.default.svc.cluster.local:6789 # this should be the correct dns and port for your service
+      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local  
     - hostname: grafana.azaurus.dev
-      service: http://grafana.default.svc.cluster.local:80 # this should be the correct dns and port for your service  
+      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local    
     - hostname: nextcloud.azaurus.dev
-      service: http://nextcloud.default.svc.cluster.local:8080 # this should be the correct dns and port for your service
+      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local  
     - hostname: blog.azaurus.dev
-      service: http://ghost.default.svc.cluster.local:443 # this should be the correct dns and port for your service
+      service: http://ghost.default.svc.cluster.local:443 
     - hostname: readarr.azaurus.dev
-      service: http://readarr.default.svc.cluster.local:8787 # this should be the correct dns and port for your service
+      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local  
     - hostname: kavita.azaurus.dev
-      service: http://kavita.default.svc.cluster.local:10189 # this should be the correct dns and port for your service
+      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local  
     - hostname: prowlarr.azaurus.dev
-      service: http://prowlarr.default.svc.cluster.local:9696 # this should be the correct dns and port for your service
+      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local  
     # - hostname: ment-vault.azaurus.dev
-    #   service: http://ment-vault-wikijs.default.svc.cluster.local:10045 # this should be the correct dns and port for your service
+    #   service: http://ment-vault-wikijs.default.svc.cluster.local:10045 
     - hostname: plane.azaurus.dev
       service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
     # - hostname: authentik.azaurus.dev
