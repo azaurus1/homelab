@@ -3,5 +3,5 @@ name: uptime-kuma
 version: 0.0.0
 dependencies:
   - name: uptime-kuma
-    version: 2.9.2
+    version: 2.18.0
     repository: https://dirsigler.github.io/uptime-kuma-helm
