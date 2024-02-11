@@ -4,4 +4,4 @@ version: 1.0.0
 dependencies:
   - name: headscale
     version: 0.12.7
-    repository: oci://ghcr.io/gabe565/charts/
+    repository: oci://ghcr.io/gabe565/charts
