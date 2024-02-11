@@ -1,0 +1,7 @@
+apiVersion: v2
+name: headscale
+version: 1.0.0
+dependencies:
+  - name: headscale
+    version: 0.12.7
+    repository: oci://ghcr.io/gabe565/charts/headscale
