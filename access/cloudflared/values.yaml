@@ -12,7 +12,7 @@ cloudflared:
     - hostname: qbittorrent.azaurus.dev
       service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local  
     - hostname: ombi.azaurus.dev
-      service: http://ombi.default.svc.cluster.local:3579 
+      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
     - hostname: element.azaurus.dev
       service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local 
     - hostname: matrix.azaurus.dev
@@ -34,7 +34,7 @@ cloudflared:
     - hostname: nextcloud.azaurus.dev
       service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local  
     - hostname: blog.azaurus.dev
-      service: http://ghost.default.svc.cluster.local:443 
+      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
     - hostname: readarr.azaurus.dev
       service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local  
     - hostname: kavita.azaurus.dev
