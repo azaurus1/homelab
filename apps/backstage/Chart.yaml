@@ -1,0 +1,7 @@
+apiVersion: v2
+name: backstage
+version: 1.0.0
+dependencies:
+  - name: backstage
+    version: 1.8.2
+    repository: oci://ghcr.io/backstage/charts/backstage
