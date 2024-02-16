@@ -34,7 +34,7 @@ cloudflared:
     - hostname: nextcloud.azaurus.dev
       service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local  
     - hostname: blog.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
+      service: http://ghost.default.svc.cluster.local:443
     - hostname: readarr.azaurus.dev
       service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local  
     - hostname: kavita.azaurus.dev
