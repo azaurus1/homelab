@@ -1,0 +1,7 @@
+apiVersion: v2
+name: frigate
+version: 1.0.0
+dependencies:
+  - name: frigate
+    version: 12.2.0
+    repository: https://charts.truecharts.org/
