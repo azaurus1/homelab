@@ -3,5 +3,5 @@ name: element-web
 version: 0.0.0
 dependencies:
   - name: element-web
-    version: 1.20.0
+    version: 1.21.0
     repository: https://halkeye.github.io/helm-charts/  
