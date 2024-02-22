@@ -351,3 +351,17 @@ spec:
       storage: 32Gi #1Gi
   storageClassName: nfs-client 
 ---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: mautrix-meta-data
+  annotations:
+    argocd.argoproj.io/sync-options: Prune=false
+spec:
+  accessModes:
+    - "ReadWriteMany" #"ReadWriteMany"
+  resources:
+    requests:
+      storage: 1Gi #1Gi
+  storageClassName: nfs-client 
+---
