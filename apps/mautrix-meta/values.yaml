@@ -1,0 +1,4 @@
+mautrix-meta:
+  persistence:
+    config:
+      existingClaim: mautrix-meta-data
