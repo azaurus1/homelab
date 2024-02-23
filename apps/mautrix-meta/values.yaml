@@ -1,4 +1,9 @@
 mautrix-meta:
+  image:
+    repository: dock.mau.dev/mautrix/meta
+    pullPolicy: IfNotPresent
+    # Overrides the image tag whose default is the chart appVersion.
+    tag: ""
   service:
     main:
       enabled: false
