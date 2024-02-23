@@ -1,4 +1,7 @@
 mautrix-meta:
+  service:
+    main:
+      enabled: false
   persistence:
     config:
       existingClaim: mautrix-meta-data
