@@ -47,7 +47,7 @@ sonarr:
         # -- image repository
         repository: ghcr.io/onedr0p/exportarr
         # -- image tag
-        tag: v1.0.0
+        tag: v1.6.1
         # -- image pull policy
         pullPolicy: IfNotPresent
       env:
