@@ -4,7 +4,7 @@ wallabag:
 
   persistence:
     config:
-      enabled: true
+      enabled: false
       existingClaim: wallabag-config
       mountPath: /var/www/wallabag/app/config
 
