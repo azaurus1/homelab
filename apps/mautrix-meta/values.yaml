@@ -6,7 +6,9 @@ mautrix-meta:
     tag: ""
   service:
     main:
-      enabled: false
+      enabled: true
+      http:
+          port: 29319
   persistence:
     config:
       existingClaim: mautrix-meta-data

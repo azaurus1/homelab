@@ -1,3 +1,9 @@
 wallabag:
   env:
     SYMFONY__ENV__DOMAIN_NAME: https://wallabag.azaurus.dev
+
+  persistence:
+    enabled: true
+    existingClaim: wallabag-data
+    accessMode: ReadWriteOnce
+    size: 1Gi
