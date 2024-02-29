@@ -7,4 +7,5 @@ wallabag:
       enabled: false
       existingClaim: wallabag-config
       mountPath: /var/www/wallabag/app/config
+      
 
