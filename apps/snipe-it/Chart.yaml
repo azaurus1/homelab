@@ -1,0 +1,7 @@
+apiVersion: v2
+name: snipe-it
+version: 0.0.0
+dependencies:
+  - name: snipe-it
+    version: 9.0.14
+    repository: https://charts.truecharts.org
