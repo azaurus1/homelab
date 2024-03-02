@@ -2,6 +2,6 @@ apiVersion: v2
 name: snipe-it
 version: 0.0.0
 dependencies:
-  - name: snipeit
-    version: 3.4.1
-    repository: https://storage.googleapis.com/t3n-helm-charts
+  - name: snipe-it
+    version: 1.0.5
+    repository: https://nicholaswilde.github.io/helm-charts/
