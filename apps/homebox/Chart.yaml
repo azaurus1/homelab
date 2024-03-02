@@ -3,5 +3,5 @@ name: homebox
 version: 0.0.0
 dependencies:
   - name: homebox
-    version: 0.1.6
-    repository: https://charts.coo-ops.space/
+    version: 6.2.0
+    repository: https://charts.truecharts.org
