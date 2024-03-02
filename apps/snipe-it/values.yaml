@@ -22,7 +22,7 @@ snipe-it:
       enabled: true
   redis:
     enabled: true
-    existingSecret: rediscreds
+    existingSecret: snipe-it-rediscreds
   securityContext:
     container:
       readOnlyRootFilesystem: false
