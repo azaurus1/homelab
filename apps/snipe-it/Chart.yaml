@@ -2,6 +2,6 @@ apiVersion: v2
 name: snipe-it
 version: 0.0.0
 dependencies:
-  - name: snipe-it
-    version: 9.0.14
-    repository: https://charts.truecharts.org
+  - name: snipeit
+    version: 3.4.1
+    repository: https://storage.googleapis.com/t3n-helm-charts
