@@ -1,0 +1,7 @@
+apiVersion: v2
+name: homebox
+version: 0.0.0
+dependencies:
+  - name: homebox
+    version: 0.1.6
+    repository: https://charts.coo-ops.space/
