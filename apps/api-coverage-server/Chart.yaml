@@ -3,5 +3,5 @@ name: api-coverage-server
 version: 1.0.0
 dependencies:
   - name: api-coverage-server
-    version: 0.1.5
+    version: 0.1.6
     repository: https://chartmuseum.azaurus.dev/
