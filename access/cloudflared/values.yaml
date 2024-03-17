@@ -65,4 +65,6 @@ cloudflared:
       service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
     - hostname: api-coverage-server.azaurus.dev
       service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
+    - hostname: sonarqube.azaurus.dev
+      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
     - service: http_status:404
