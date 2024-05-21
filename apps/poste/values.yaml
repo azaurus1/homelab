@@ -2,7 +2,7 @@ poste:
   image:
     pullPolicy: IfNotPresent
     repository: analogic/poste.io
-    tag: latest@sha256:22c2ab4e5afa1e2f64f0f6eac63943df3ead66015c8ecf7c035ea2c3c42a3333
+    tag: latest@sha256:da1271cac0eedff092043eee5924396381bd9eff6b1d552f2bb5ea1abf142b61
   persistence:
     data:
       enabled: true
