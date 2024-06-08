@@ -4,4 +4,4 @@ version: 0.0.0
 dependencies:
   - name: jellyfin
     version: 19.1.11
-    repository: https://charts.truecharts.org
+    repository: oci://tccr.io/truecharts
