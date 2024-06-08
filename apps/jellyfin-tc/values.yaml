@@ -23,7 +23,7 @@ jellyfin-tc:
           targetPort: 7359
   persistence:
     config:
-      enabled: true
+      enabled: false
       type: pvc
       existingClaim: config-jellyfin
       mountPath: "/config"
