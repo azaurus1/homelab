@@ -1,0 +1,7 @@
+apiVersion: v2
+name: jellyfin-tc
+version: 0.0.0
+dependencies:
+  - name: jellyfin
+    version: 19.1.11
+    repository: https://charts.truecharts.org
