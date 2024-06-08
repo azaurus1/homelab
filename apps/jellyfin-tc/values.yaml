@@ -22,7 +22,9 @@ service:
         targetPort: 7359
 persistence:
   config:
-    enabled: false
+    enabled: true
+    type: pvc
+    existingClaim: config-jellyfin
     mountPath: "/config"
   cache:
     enabled: false
