@@ -1,4 +1,4 @@
-jellyfin-tc:
+jellyfin:
   persistence:
     config:
       enabled: false
