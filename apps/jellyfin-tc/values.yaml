@@ -2,6 +2,8 @@ jellyfin:
   persistence:
     config:
       enabled: true
+      type: pvc
+      existingClaim: config-jellyfin
     cache:
       enabled: false
     transcode:
