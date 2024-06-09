@@ -9,6 +9,6 @@ jellyfin:
       existingClaim: media
       mountPath: /media
     cache:
-      enabled: false
+      enabled: true
     transcode:
       enabled: false
