@@ -1,7 +1,7 @@
 headscale:
   env:
     HEADSCALE_DNS_CONFIG_BASE_DOMAIN: azaurus.dev
-    HEADSCALE_SERVER_URL: headscale.azaurus.dev
+    HEADSCALE_SERVER_URL: https://headscale.azaurus.dev
 
   sidecars:
     ui:
