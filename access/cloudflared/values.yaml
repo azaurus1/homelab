@@ -6,43 +6,43 @@ cloudflared:
     tunnelSecret: "UPDATE IN KUBERNETES"
   ingress:
     - hostname: sonarr.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local  
+      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
     - hostname: radarr.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local  
+      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
     - hostname: qbittorrent.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local  
+      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
     - hostname: ombi.azaurus.dev
       service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
     - hostname: element.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local 
+      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
     - hostname: matrix.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local    
+      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
     - hostname: jellyfin.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local  
+      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
     - hostname: uptime.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local  
+      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
     - hostname: heimdall.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local  
+      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
     - hostname: gotify.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local 
+      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
     - hostname: chartmuseum.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local  
+      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
     - hostname: nzbget.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local  
+      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
     - hostname: grafana.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local    
+      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
     - hostname: nextcloud.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local  
+      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
     - hostname: blog.azaurus.dev
       service: http://ghost.default.svc.cluster.local:443
     - hostname: readarr.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local  
+      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
     - hostname: kavita.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local  
+      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
     - hostname: prowlarr.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local  
+      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
     # - hostname: ment-vault.azaurus.dev
-    #   service: http://ment-vault-wikijs.default.svc.cluster.local:10045 
+    #   service: http://ment-vault-wikijs.default.svc.cluster.local:10045
     - hostname: plane.azaurus.dev
       service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
     # - hostname: authentik.azaurus.dev
@@ -66,5 +66,7 @@ cloudflared:
     - hostname: api-coverage-server.azaurus.dev
       service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
     - hostname: sonarqube.azaurus.dev
+      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
+    - hostname: headscale.azaurus.dev
       service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
     - service: http_status:404
