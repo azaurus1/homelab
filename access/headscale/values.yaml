@@ -1,0 +1,11 @@
+headscale:
+  env:
+    HEADSCALE_DNS_CONFIG_BASE_DOMAIN: azaurus.dev
+    HEADSCALE_SERVER_URL: headscale.azaurus.dev
+
+  sidecars:
+    ui:
+      image: ghcr.io/gurucomputing/headscale-ui:latest
+      ports:
+        - name: http
+          containerPort: 80
