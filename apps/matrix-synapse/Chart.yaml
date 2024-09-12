@@ -3,5 +3,5 @@ name: matrix-synapse
 version: 0.0.0
 dependencies:
   - name: matrix-synapse
-    version: 2.7.8
+    version: 2.7.9
     repository: https://ananace.gitlab.io/charts
