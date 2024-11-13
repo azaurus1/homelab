@@ -1,0 +1,7 @@
+apiVersion: v2
+name: odoo
+version: 0.0.1
+dependencies:
+  - name: odoo
+    version: 28.0.1
+    repository: https://charts.bitnami.com/bitnami
