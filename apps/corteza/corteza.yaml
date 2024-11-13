@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: corteza
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: corteza
+  template:
+    metadata:
+      labels:
+        app: corteza
+    spec:
+      containers:
+        - name: corteza
+          image: cortezaproject/corteza-server:latest
+          env:
+            - name: DB_DSN
+              value: "postgres://corteza:corteza-password@postgres:5432/corteza?sslmode=disable"
+            - name: AUTH_SECRET
+              value: "your-auth-secret"
+            - name: JWT_SECRET
+              value: "your-jwt-secret"
+          ports:
+            - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: corteza
+spec:
+  ports:
+    - port: 80
+  selector:
+    app: corteza
