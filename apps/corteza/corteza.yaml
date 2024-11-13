@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: corteza
-          image: cortezaproject/corteza-server:latest
+          image: cortezaproject/corteza:2023.9.8
           env:
             - name: DB_DSN
               value: "postgres://corteza:corteza-password@postgres:5432/corteza?sslmode=disable"
