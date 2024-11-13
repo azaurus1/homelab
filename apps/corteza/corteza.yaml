@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: corteza-config
 data:
-  DB_DSN: "postgres://corteza:corteza-password@postgres:5432/corteza?sslmode=disable"
+  DB_DSN: "postgres://corteza:corteza-password@corteza-pg:5432/corteza?sslmode=disable"
   AUTH_SECRET: "your-auth-secret"
   JWT_SECRET: "your-jwt-secret"
 ---
