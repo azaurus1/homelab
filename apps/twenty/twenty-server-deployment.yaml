@@ -29,7 +29,7 @@ spec:
               value: "true"
             - name: FRONT_BASE_URL
             - name: PG_DATABASE_URL
-              value: postgres://postgres:twenty@db:5432/default
+              value: postgres://postgres:twenty@twenty-db:5432/default
             - name: PORT
               value: "3000"
             - name: REDIS_URL
@@ -40,7 +40,7 @@ spec:
             - name: STORAGE_S3_NAME
             - name: STORAGE_S3_REGION
             - name: STORAGE_TYPE
-          image: 'twentycrm/twenty:'
+          image: "twentycrm/twenty:"
           livenessProbe:
             exec:
               command:

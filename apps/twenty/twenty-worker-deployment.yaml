@@ -45,6 +45,6 @@ spec:
               value: ""
             - name: STORAGE_TYPE
               value: local
-          image: "twentycrm/twenty:"
+          image: "twentycrm/twenty:latest"
           name: twenty-worker
       restartPolicy: Always

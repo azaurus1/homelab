@@ -32,7 +32,7 @@ spec:
               value: postgres
             - name: SPILO_PROVIDER
               value: local
-          image: 'twentycrm/twenty-postgres-spilo:'
+          image: "twentycrm/twenty-postgres-spilo:latest"
           livenessProbe:
             exec:
               command:
