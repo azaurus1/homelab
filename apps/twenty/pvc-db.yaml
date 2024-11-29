@@ -4,7 +4,6 @@ metadata:
   name: twentycrm-db-pvc
 spec:
   storageClassName: default
-  volumeName: twentycrm-db-pv
   accessModes:
     - ReadWriteOnce
   resources:
