@@ -41,6 +41,8 @@ spec:
             periodSeconds: 5
             timeoutSeconds: 5
           name: twenty-db
+          ports:
+            - containerPort: 5432
           volumeMounts:
             - mountPath: /home/postgres/pgdata
               name: twenty-db-data
