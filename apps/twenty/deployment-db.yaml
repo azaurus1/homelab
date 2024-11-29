@@ -33,6 +33,8 @@ spec:
               value: "postgres"
             - name: PGPASSWORD_SUPERUSER
               value: "twenty"
+            - name: POSTGRESQL_PASSWORD
+              value: mysecurepassword
           ports:
             - containerPort: 5432
               name: tcp
