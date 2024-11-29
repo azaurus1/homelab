@@ -4,7 +4,6 @@ metadata:
   labels:
     app: twentycrm-redis
   name: twentycrm-redis
-  namespace: twentycrm
 spec:
   progressDeadlineSeconds: 600
   replicas: 1

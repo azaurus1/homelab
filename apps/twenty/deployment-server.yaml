@@ -4,7 +4,6 @@ metadata:
   labels:
     app: twentycrm-server
   name: twentycrm-server
-  namespace: twentycrm
 spec:
   progressDeadlineSeconds: 600
   replicas: 1

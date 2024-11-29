@@ -4,7 +4,6 @@ metadata:
   labels:
     app: twentycrm-worker
   name: twentycrm-worker
-  namespace: twentycrm
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
