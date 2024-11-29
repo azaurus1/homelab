@@ -20,6 +20,13 @@ spec:
       labels:
         app: twentycrm-server
     spec:
+      initContainers:
+        - name: init-port
+          image: busybox
+          command: ["sh", "-c", "echo 3000 > /etc/config/port"]
+          volumeMounts:
+            - name: config-volume
+              mountPath: /etc/config
       volumes:
         - name: twentycrm-server-data
           persistentVolumeClaim:
@@ -27,13 +34,15 @@ spec:
         - name: twentycrm-docker-data
           persistentVolumeClaim:
             claimName: twentycrm-docker-data-pvc
+        - name: config-volume
+          emptyDir: {} # Shared volume between initContainer and main container
       containers:
         - name: twentycrm
           image: twentycrm/twenty:latest
           imagePullPolicy: Always
           env:
-            - name: PORT
-              value: 3000
+            - name: PORT_FILE
+              value: "/etc/config/port" # Path to the file written by initContainer
             - name: SERVER_URL
               value: "https://crm.example.com:443"
             - name: FRONT_BASE_URL
