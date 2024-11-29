@@ -1,10 +1,11 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  labels:
-    io.kompose.service: twenty-server-local-data
-  name: twenty-server-local-data
+  name: twentycrm-docker-data-pvc
+  namespace: twentycrm
 spec:
+  storageClassName: default
+  volumeName: twentycrm-docker-data-pv
   accessModes:
     - ReadWriteOnce
   resources:
