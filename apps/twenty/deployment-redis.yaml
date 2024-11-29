@@ -20,20 +20,13 @@ spec:
       labels:
         app: twentycrm-redis
     spec:
-      initContainers:
-        - name: init-port
-          image: busybox
-          command: ["sh", "-c", "echo 6379 > /etc/config/port"]
-          volumeMounts:
-            - name: config-volume
-              mountPath: /etc/config
       containers:
         - name: redis
           image: redis/redis-stack-server:latest
           imagePullPolicy: Always
           env:
-            - name: PORT_FILE
-              value: "/etc/config/port" # Pointing to the file written by initContainer
+            - name: PORT
+              value: "6379"
           ports:
             - containerPort: 6379
               name: redis
@@ -45,9 +38,6 @@ spec:
             limits:
               memory: "2048Mi"
               cpu: "500m"
-      volumes:
-        - name: config-volume
-          emptyDir: {}
 
       dnsPolicy: ClusterFirst
       restartPolicy: Always
