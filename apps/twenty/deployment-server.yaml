@@ -48,7 +48,7 @@ spec:
             - name: FRONT_BASE_URL
               value: "https://crm.example.com:443"
             - name: "PG_DATABASE_URL"
-              value: "postgres://postgres:twenty@twenty-db.default.svc.cluster.local:5432/default"
+              value: "postgres://postgres:twenty@twentycrm-db.default.svc.cluster.local/default"
             - name: "REDIS_URL"
               value: "redis://twentycrm-redis.default.svc.cluster.local:6379"
             - name: ENABLE_DB_MIGRATIONS
