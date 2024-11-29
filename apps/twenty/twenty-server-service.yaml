@@ -12,5 +12,8 @@ spec:
     - name: "3000"
       port: 3000
       targetPort: 3000
+    - name: "3001"
+      port: 3001
+      targetPort: 3001
   selector:
     io.kompose.service: twenty-server
