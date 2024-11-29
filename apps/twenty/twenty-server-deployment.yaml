@@ -40,7 +40,7 @@ spec:
             - name: STORAGE_S3_NAME
             - name: STORAGE_S3_REGION
             - name: STORAGE_TYPE
-          image: "twentycrm/twenty:"
+          image: "twentycrm/twenty:latest"
           livenessProbe:
             exec:
               command:
