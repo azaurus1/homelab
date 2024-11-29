@@ -3,7 +3,6 @@ kind: PersistentVolumeClaim
 metadata:
   name: twentycrm-db-pvc
 spec:
-  storageClassName: default
   accessModes:
     - ReadWriteOnce
   resources:

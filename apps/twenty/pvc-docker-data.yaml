@@ -3,7 +3,6 @@ kind: PersistentVolumeClaim
 metadata:
   name: twentycrm-docker-data-pvc
 spec:
-  storageClassName: default
   accessModes:
     - ReadWriteOnce
   resources:
