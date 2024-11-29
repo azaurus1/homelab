@@ -35,9 +35,9 @@ spec:
             - name: PORT
               value: "3000"
             - name: SERVER_URL
-              value: "https://crm.example.com:443"
+              value: "http://192.168.0.131:30319"
             - name: FRONT_BASE_URL
-              value: "https://crm.example.com:443"
+              value: "http://192.168.0.131:30319"
             - name: "PG_DATABASE_URL"
               value: "postgres://postgres:mysecurepassword@twentycrm-db.default.svc.cluster.local:5432/default"
             - name: "REDIS_URL"
