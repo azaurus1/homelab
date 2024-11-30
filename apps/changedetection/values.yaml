@@ -10,7 +10,7 @@ changedetection-io:
     # -- image repository
     repository: ghcr.io/dgtlmoon/changedetection.io
     # -- image tag
-    tag: 0.45.14
+    tag: 0.47.06
     # -- image pull policy
     pullPolicy: IfNotPresent
 
