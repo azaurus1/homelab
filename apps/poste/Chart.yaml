@@ -1,7 +1,0 @@
-apiVersion: v2
-name: poste
-version: 0.0.0
-dependencies:
-  - name: poste
-    version: 3.0.14
-    repository: oci://tccr.io/truecharts
