@@ -84,20 +84,6 @@ app-template:
             - secretRef:
                 name: omnivore-content-fetch-token
 
-    postgres:
-      enabled: true
-      type: deployment
-      strategy: RollingUpdate
-      containers:
-        postgres:
-          image:
-            repository: postgres
-            tag: 14.4
-            pullPolicy: IfNotPresent
-          env:
-            POSTGRES_DB: omnivore
-            POSTGRES_USER: app_user
-
   service:
     # main:
     #   enabled: false
@@ -116,8 +102,3 @@ app-template:
       ports:
         http:
           port: 8080
-    postgres:
-      controller: postgres
-      ports:
-        tcp:
-          port: 5432
