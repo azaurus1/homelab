@@ -14,7 +14,7 @@ app-template:
             pullPolicy: IfNotPresent
           env:
             API_ENV: local
-            PG_HOST: postgres.postgres.svc.cluster.local
+            PG_HOST: omnivore-postgresql.default.svc.cluster.local
             PG_USER: app_user
             PG_DB: omnivore
             PG_PORT: 5432
