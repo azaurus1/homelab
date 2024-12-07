@@ -1,7 +1,7 @@
 app-template:
   controllers:
-    main:
-      enabled: false
+    # main:
+    #   enabled: false
     api:
       enabled: true
       type: deployment
@@ -85,8 +85,8 @@ app-template:
                 name: omnivore-content-fetch-token
 
   service:
-    main:
-      enabled: false
+    # main:
+    #   enabled: false
     api:
       controller: api
       ports:
