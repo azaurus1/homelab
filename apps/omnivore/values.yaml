@@ -84,6 +84,30 @@ app-template:
             - secretRef:
                 name: omnivore-content-fetch-token
 
+    postgres:
+      enabled: true
+      type: deployment
+      strategy: RollingUpdate
+      containers:
+        postgres:
+          image:
+            repository: postgres
+            tag: 14.4
+            pullPolicy: IfNotPresent
+          env:
+            POSTGRES_DB: omnivore
+            POSTGRES_USER: app_user
+          envFrom:
+            - secretRef:
+                name: postgres-admin-user-and-password
+          volumeMounts:
+            - name: postgres-data
+              mountPath: /var/lib/postgresql/data
+      volumes:
+        - name: postgres-data
+          persistentVolumeClaim:
+            claimName: postgres-data-pvc
+
   service:
     # main:
     #   enabled: false
@@ -102,3 +126,8 @@ app-template:
       ports:
         http:
           port: 8080
+    postgres:
+      controller: postgres
+      ports:
+        tcp:
+          port: 5432
