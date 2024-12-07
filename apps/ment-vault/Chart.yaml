@@ -3,5 +3,5 @@ name: ment-vault
 version: 0.1.0
 dependencies:
   - name: wikijs
-    version: 11.0.22
+    version: 11.0.25
     repository: https://charts.truecharts.org/
