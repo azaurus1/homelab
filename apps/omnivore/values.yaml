@@ -22,17 +22,13 @@ app-template:
             CLIENT_URL: https://omnivore.example.com # URL any client can use to reach the server
             GATEWAY_URL: http://omnivore-api:8080/api
             CONTENT_FETCH_URL: http://omnivore-content-fetch:8080/?token=$(VERIFICATION_TOKEN)
-          envFrom:
-            - secretRef:
-                name: omnivore-image-proxy-secret
-            - secretRef:
-                name: omnivore-jwt-secret
-            - secretRef:
-                name: omnivore-sso-jwt-secret
-            - secretRef:
-                name: omnivore-pg-password
-            - secretRef:
-                name: omnivore-content-fetch-verification-token
+            IMAGE_PROXY_SECRET: "changeme"
+            JWT_SECRET: "changeme"
+            SSO_JWT_SECRET: "changeme"
+            PG_PASSWORD: "changeme"
+            PGPASSWORD: "changeme"
+            POSTGRES_USER: "changeme"
+            VERIFICATION_TOKEN: "changeme"
       initContainers:
         migrate:
           image:
