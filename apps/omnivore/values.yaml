@@ -131,3 +131,12 @@ app-template:
       ports:
         tcp:
           port: 5432
+
+  storage:
+    persistentVolumeClaims:
+      postgres-data-pvc:
+        accessModes:
+          - ReadWriteOnce
+        resources:
+          requests:
+            storage: 10Gi
