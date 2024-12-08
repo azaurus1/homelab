@@ -25,9 +25,9 @@ app-template:
             IMAGE_PROXY_SECRET: "changeme"
             JWT_SECRET: "changeme"
             SSO_JWT_SECRET: "changeme"
-            PG_PASSWORD: "changeme"
-            PGPASSWORD: "changeme"
-            POSTGRES_USER: "changeme"
+            PG_PASSWORD: "postgres"
+            PGPASSWORD: "postgres"
+            POSTGRES_USER: "postgres"
             VERIFICATION_TOKEN: "changeme"
       initContainers:
         migrate:
@@ -42,9 +42,9 @@ app-template:
             PG_USER: app_user
             PG_DB: omnivore
             NO_DEMO_USER: 1
-            PG_PASSWORD: "changeme"
-            PGPASSWORD: "changeme"
-            POSTGRES_USER: "changeme"
+            PG_PASSWORD: "postgres"
+            PGPASSWORD: "postgres"
+            POSTGRES_USER: "postgres"
 
     # NOTE: You need to build this image for your specific setup because NEXT.js burns some environment variables into client code
     # See: https://nextjs.org/docs/pages/building-your-application/configuring/environment-variables#bundling-environment-variables-for-the-browser
@@ -93,3 +93,6 @@ app-template:
       ports:
         http:
           port: 8080
+
+postgresql:
+  postgresPassword: "postgres"
