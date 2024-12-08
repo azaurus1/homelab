@@ -41,18 +41,12 @@ cloudflared:
       service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
     - hostname: prowlarr.azaurus.dev
       service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
-    # - hostname: ment-vault.azaurus.dev
-    #   service: http://ment-vault-wikijs.default.svc.cluster.local:10045
     - hostname: plane.azaurus.dev
       service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
-    # - hostname: authentik.azaurus.dev
-    #   service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
     - hostname: ldap.azaurus.dev
       service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
     - hostname: phpldapadmin.azaurus.dev
       service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
-    # - hostname: poste.azaurus.dev
-    #   service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
     - hostname: changedetection-io.azaurus.dev
       service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
     - hostname: wallabag.azaurus.dev
@@ -72,5 +66,7 @@ cloudflared:
     - hostname: headscale.azaurus.dev
       service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
     - hostname: twenty.azaurus.dev
+      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
+    - hostname: omnivore.azaurus.dev
       service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
     - service: http_status:404
