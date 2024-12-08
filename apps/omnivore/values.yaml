@@ -95,6 +95,7 @@ app-template:
           port: 8080
 
 postgresql:
+  enablePostgresUser: false
   postgresPassword: "postgres"
   username: "app_user"
   password: "postgres"
