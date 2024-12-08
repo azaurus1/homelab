@@ -42,11 +42,9 @@ app-template:
             PG_USER: app_user
             PG_DB: omnivore
             NO_DEMO_USER: 1
-          envFrom:
-            - secretRef:
-                name: omnivore-pg-password
-            - secretRef:
-                name: postgres-admin-user-and-password
+            PG_PASSWORD: "changeme"
+            PGPASSWORD: "changeme"
+            POSTGRES_USER: "changeme"
 
     # NOTE: You need to build this image for your specific setup because NEXT.js burns some environment variables into client code
     # See: https://nextjs.org/docs/pages/building-your-application/configuring/environment-variables#bundling-environment-variables-for-the-browser
@@ -74,11 +72,8 @@ app-template:
             pullPolicy: IfNotPresent
           env:
             REST_BACKEND_ENDPOINT: http://omnivore-api:8080/api
-          envFrom:
-            - secretRef:
-                name: omnivore-jwt-secret
-            - secretRef:
-                name: omnivore-content-fetch-token
+            JWT_SECRET: "changeme"
+            VERIFICATION_TOKEN: "changeme"
 
   service:
     # main:
