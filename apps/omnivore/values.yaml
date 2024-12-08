@@ -98,3 +98,4 @@ postgresql:
   postgresPassword: "postgres"
   username: "app_user"
   password: "postgres"
+  database: "omnivore"
