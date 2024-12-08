@@ -95,8 +95,11 @@ app-template:
           port: 8080
 
 postgresql:
-  enablePostgresUser: false
-  postgresPassword: "postgres"
-  username: "app_user"
-  password: "postgres"
-  database: "omnivore"
+  global:
+    postgresql:
+      auth:
+        enablePostgresUser: false
+        postgresPassword: "postgres"
+        username: "app_user"
+        password: "postgres"
+        database: "omnivore"
