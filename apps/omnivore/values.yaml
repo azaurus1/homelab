@@ -15,7 +15,7 @@ app-template:
           env:
             API_ENV: local
             PG_HOST: omnivore-postgresql.default.svc.cluster.local
-            PG_USER: app_user
+            PG_USER: postgres
             PG_DB: omnivore
             PG_PORT: 5432
             PG_POOL_MAX: 20
