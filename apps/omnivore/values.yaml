@@ -27,7 +27,7 @@ app-template:
             SSO_JWT_SECRET: "changeme"
             PG_PASSWORD: "postgres"
             PGPASSWORD: "postgres"
-            POSTGRES_USER: "postgres"
+            POSTGRES_USER: "app_user"
             VERIFICATION_TOKEN: "changeme"
       initContainers:
         migrate:
@@ -44,7 +44,7 @@ app-template:
             NO_DEMO_USER: 1
             PG_PASSWORD: "postgres"
             PGPASSWORD: "postgres"
-            POSTGRES_USER: "postgres"
+            POSTGRES_USER: "app_user"
 
     # NOTE: You need to build this image for your specific setup because NEXT.js burns some environment variables into client code
     # See: https://nextjs.org/docs/pages/building-your-application/configuring/environment-variables#bundling-environment-variables-for-the-browser
@@ -96,3 +96,5 @@ app-template:
 
 postgresql:
   postgresPassword: "postgres"
+  username: "app_user"
+  password: "postgres"
