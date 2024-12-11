@@ -37,9 +37,9 @@ spec:
               protocol: TCP
           volumeMounts:
             - mountPath: /var/lib/postgresql/data
-              name: metabase-db-data
+              name: lifevisor-metabase-db-data
       restartPolicy: Always
       volumes:
-        - name: metabase-db-data
+        - name: lifevisor-metabase-db-data
           persistentVolumeClaim:
-            claimName: metabase-db-data
+            claimName: lifevisor-metabase-db-data
