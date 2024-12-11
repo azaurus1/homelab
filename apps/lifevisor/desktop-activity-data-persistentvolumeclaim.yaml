@@ -6,7 +6,7 @@ metadata:
   name: desktop-activity-data
 spec:
   accessModes:
-    - ReadOnlyMany
+    - ReadWriteMany
   resources:
     requests:
       storage: 2Gi
