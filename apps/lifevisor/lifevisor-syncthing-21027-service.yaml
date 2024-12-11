@@ -6,19 +6,9 @@ metadata:
     kompose.version: 1.34.0 (cbf2835db)
   labels:
     io.kompose.service: lifevisor-syncthing
-  name: lifevisor-syncthing
+  name: lifevisor-syncthing-21027
 spec:
   ports:
-    - name: "8384"
-      port: 8384
-      targetPort: 8384
-    - name: "22000"
-      port: 22000
-      targetPort: 22000
-    - name: 22000-udp
-      port: 22000
-      protocol: UDP
-      targetPort: 22000
     - name: "21027"
       port: 21027
       protocol: UDP
