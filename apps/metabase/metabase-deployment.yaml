@@ -25,7 +25,7 @@ spec:
             - name: MB_DB_DBNAME
               value: metabaseappdb
             - name: MB_DB_HOST
-              value: postgres
+              value: metabase-postgres
             - name: MB_DB_PASS
               value: mysecretpassword
             - name: MB_DB_PORT
