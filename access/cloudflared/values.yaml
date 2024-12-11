@@ -67,6 +67,6 @@ cloudflared:
       service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
     - hostname: twenty.azaurus.dev
       service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
-    - hostname: omnivore.azaurus.dev
+    - hostname: metabase.azaurus.dev
       service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
     - service: http_status:404
