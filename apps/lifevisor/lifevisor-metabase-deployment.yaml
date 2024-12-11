@@ -61,8 +61,6 @@ spec:
         - name: mobile-activity-data
           persistentVolumeClaim:
             claimName: mobile-activity-data
-            readOnly: true
         - name: desktop-activity-data
           persistentVolumeClaim:
             claimName: desktop-activity-data
-            readOnly: true

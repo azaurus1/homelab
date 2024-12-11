@@ -37,10 +37,8 @@ spec:
           volumeMounts:
             - mountPath: /mobile-activity-db
               name: mobile-activity-data
-              readOnly: true
             - mountPath: /desktop-activity-db
               name: desktop-activity-data
-              readOnly: true
       restartPolicy: Always
       volumes:
         - name: mobile-activity-data
