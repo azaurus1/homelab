@@ -48,19 +48,5 @@ spec:
           ports:
             - containerPort: 3000
               protocol: TCP
-          volumeMounts:
-            - mountPath: /mobile-activity-db
-              name: mobile-activity-data
-              readOnly: true
-            - mountPath: /desktop-activity-db
-              name: desktop-activity-data
-              readOnly: true
       hostname: metabase
       restartPolicy: Always
-      volumes:
-        - name: mobile-activity-data
-          persistentVolumeClaim:
-            claimName: mobile-activity-data
-        - name: desktop-activity-data
-          persistentVolumeClaim:
-            claimName: desktop-activity-data
