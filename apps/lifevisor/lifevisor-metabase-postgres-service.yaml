@@ -5,12 +5,12 @@ metadata:
     kompose.cmd: kompose -f docker-compose.yml convert -o ./kube
     kompose.version: 1.34.0 (cbf2835db)
   labels:
-    io.kompose.service: lifevisor-metabase-postgres
-  name: lifevisor-metabase-postgres
+    io.kompose.service: lifevisor-postgres
+  name: lifevisor-postgres
 spec:
   ports:
     - name: "5432"
       port: 5432
       targetPort: 5432
   selector:
-    io.kompose.service: lifevisor-metabase-postgres
+    io.kompose.service: lifevisor-postgres
