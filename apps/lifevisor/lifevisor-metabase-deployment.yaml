@@ -27,7 +27,7 @@ spec:
             - name: MB_DB_DBNAME
               value: metabaseappdb
             - name: MB_DB_HOST
-              value: lifevisor-postgres
+              value: lifevisor-metabase-postgres
             - name: MB_DB_PASS
               value: mysecretpassword
             - name: MB_DB_PORT
