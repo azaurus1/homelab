@@ -25,11 +25,11 @@ spec:
       containers:
         - env:
             - name: POSTGRES_DB
-              value: metabaseappdb
+              value: lifevisor
             - name: POSTGRES_PASSWORD
-              value: mysecretpassword
+              value: postgres
             - name: POSTGRES_USER
-              value: metabase
+              value: postgres
           image: postgres:latest
           name: lifevisor-postgres
           ports:
@@ -37,9 +37,9 @@ spec:
               protocol: TCP
           volumeMounts:
             - mountPath: /var/lib/postgresql/data
-              name: lifevisor-metabase-db-data
+              name: lifevisor-db-data
       restartPolicy: Always
       volumes:
-        - name: lifevisor-metabase-db-data
+        - name: lifevisor-db-data
           persistentVolumeClaim:
-            claimName: lifevisor-metabase-db-data
+            claimName: lifevisor-db-data
