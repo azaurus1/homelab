@@ -4,7 +4,7 @@ penpot:
   global:
     # -- Whether to deploy the Bitnami PostgreSQL chart as subchart. Check [the official chart](https://artifacthub.io/packages/helm/bitnami/postgresql) for configuration.
     # @section -- Global parameters
-    postgresqlEnabled: false
+    postgresqlEnabled: true
     # -- Whether to deploy the Bitnami Redis chart as subchart. Check [the official chart](https://artifacthub.io/packages/helm/bitnami/redis) for configuration.
     # @section -- Global parameters
     redisEnabled: false
