@@ -3,5 +3,5 @@ name: cloudflared
 version: 0.0.0
 dependencies:
   - name: cloudflared
-    version: 1.0.0
-    repository: https://charts.codechem.com
+    version: 1.5.2
+    repository: https://charts.kubito.dev
