@@ -1,5 +1,4 @@
 penpot:
-  # yaml-language-server: $schema=values.schema.json
   ## Default values for Penpot
 
   global:
