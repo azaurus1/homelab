@@ -1,9 +1,11 @@
 cloudflared:
-  tunnelID: "f711274a-e21a-4d8a-85e6-b6492dc059be"
-  auth:
-    accountTag: "0cc2af205c8980e76b19852b3183bcfd"
-    tunnelName: "homelab"
-    tunnelSecret: "UPDATE IN KUBERNETES"
+  local:
+    enabled: true
+    auth:
+      tunnelID: "f711274a-e21a-4d8a-85e6-b6492dc059be"
+      accountTag: "0cc2af205c8980e76b19852b3183bcfd"
+      tunnelName: "homelab"
+      tunnelSecret: "UPDATE IN KUBERNETES"
   ingress:
     - hostname: sonarr.azaurus.dev
       service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
