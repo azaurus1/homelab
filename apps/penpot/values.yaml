@@ -7,7 +7,7 @@ penpot:
     postgresqlEnabled: true
     # -- Whether to deploy the Bitnami Redis chart as subchart. Check [the official chart](https://artifacthub.io/packages/helm/bitnami/redis) for configuration.
     # @section -- Global parameters
-    redisEnabled: false
+    redisEnabled: true
     # -- Global Docker registry secret names.
     # E.g.
     # imagePullSecrets:
@@ -619,4 +619,4 @@ penpot:
     auth:
       # -- Whether to enable password authentication.
       # @section -- Redis Dependencie parameters
-      enabled: true
+      enabled: false
