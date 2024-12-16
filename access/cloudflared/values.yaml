@@ -6,71 +6,71 @@ cloudflared:
       accountTag: "0cc2af205c8980e76b19852b3183bcfd"
       tunnelName: "homelab"
       tunnelSecret: "UPDATE IN KUBERNETES"
-  ingress:
-    - hostname: sonarr.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
-    - hostname: radarr.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
-    - hostname: qbittorrent.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
-    - hostname: ombi.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
-    - hostname: element.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
-    - hostname: matrix.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
-    - hostname: jellyfin.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
-    - hostname: uptime.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
-    - hostname: heimdall.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
-    - hostname: gotify.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
-    - hostname: chartmuseum.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
-    - hostname: nzbget.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
-    - hostname: grafana.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
-    - hostname: nextcloud.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
-    - hostname: blog.azaurus.dev
-      service: http://ghost.default.svc.cluster.local:443
-    - hostname: readarr.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
-    - hostname: kavita.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
-    - hostname: prowlarr.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
-    - hostname: plane.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
-    - hostname: ldap.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
-    - hostname: phpldapadmin.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
-    - hostname: changedetection-io.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
-    - hostname: wallabag.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
-    - hostname: calibre.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
-    - hostname: frigate.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
-    - hostname: snipe-it.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
-    - hostname: api-coverage-server.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
-    - hostname: sonarqube.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
-    - hostname: odoo.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
-    - hostname: headscale.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
-    - hostname: twenty.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
-    - hostname: metabase.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
-    - hostname: penpot.azaurus.dev
-      service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
-    - service: http_status:404
+    ingress:
+      - hostname: sonarr.azaurus.dev
+        service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
+      - hostname: radarr.azaurus.dev
+        service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
+      - hostname: qbittorrent.azaurus.dev
+        service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
+      - hostname: ombi.azaurus.dev
+        service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
+      - hostname: element.azaurus.dev
+        service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
+      - hostname: matrix.azaurus.dev
+        service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
+      - hostname: jellyfin.azaurus.dev
+        service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
+      - hostname: uptime.azaurus.dev
+        service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
+      - hostname: heimdall.azaurus.dev
+        service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
+      - hostname: gotify.azaurus.dev
+        service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
+      - hostname: chartmuseum.azaurus.dev
+        service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
+      - hostname: nzbget.azaurus.dev
+        service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
+      - hostname: grafana.azaurus.dev
+        service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
+      - hostname: nextcloud.azaurus.dev
+        service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
+      - hostname: blog.azaurus.dev
+        service: http://ghost.default.svc.cluster.local:443
+      - hostname: readarr.azaurus.dev
+        service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
+      - hostname: kavita.azaurus.dev
+        service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
+      - hostname: prowlarr.azaurus.dev
+        service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
+      - hostname: plane.azaurus.dev
+        service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
+      - hostname: ldap.azaurus.dev
+        service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
+      - hostname: phpldapadmin.azaurus.dev
+        service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
+      - hostname: changedetection-io.azaurus.dev
+        service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
+      - hostname: wallabag.azaurus.dev
+        service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
+      - hostname: calibre.azaurus.dev
+        service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
+      - hostname: frigate.azaurus.dev
+        service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
+      - hostname: snipe-it.azaurus.dev
+        service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
+      - hostname: api-coverage-server.azaurus.dev
+        service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
+      - hostname: sonarqube.azaurus.dev
+        service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
+      - hostname: odoo.azaurus.dev
+        service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
+      - hostname: headscale.azaurus.dev
+        service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
+      - hostname: twenty.azaurus.dev
+        service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
+      - hostname: metabase.azaurus.dev
+        service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
+      - hostname: penpot.azaurus.dev
+        service: http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80
+      - service: http_status:404
