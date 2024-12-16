@@ -80,7 +80,7 @@ penpot:
     redis:
       # -- The Redis host to connect to. Empty to use dependencies
       # @section -- Configuration parameters
-      host: "redis-headless.default.svc.cluster.local" # Ex.: "redis-headless.penpot.svc.cluster.local"
+      host: "penpot-redis-headless.default.svc.cluster.local" # Ex.: "redis-headless.penpot.svc.cluster.local"
       # -- The Redis host port to use.
       # @section -- Configuration parameters
       port: 6379
