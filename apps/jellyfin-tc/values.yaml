@@ -10,5 +10,9 @@ jellyfin:
       mountPath: /media
     cache:
       enabled: true
+      mountPath: "/cache"
+      type: "emptyDir"
     transcode:
-      enabled: false
+      enabled: true
+      mountPath: "/config/transcodes"
+      type: "emptydir"
