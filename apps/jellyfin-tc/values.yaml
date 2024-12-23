@@ -15,4 +15,4 @@ jellyfin:
     transcode:
       enabled: true
       mountPath: "/config/transcodes"
-      type: "emptydir"
+      type: "emptyDir"
