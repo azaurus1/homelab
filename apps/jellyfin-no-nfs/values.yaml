@@ -3,7 +3,7 @@ jellyfin:
     config:
       enabled: true
       type: "hostPath"
-      hostPath: /jellyfin
+      hostPath: /data/jellyfin
       hostPathType: DirectoryOrCreate
     # media:
     #   enabled: true
