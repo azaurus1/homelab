@@ -3,6 +3,8 @@ jellyfin:
     config:
       enabled: true
       type: "hostPath"
+      hostPath: /jellyfin
+      hostPathType: DirectoryOrCreate
     # media:
     #   enabled: true
     #   existingClaim: media
