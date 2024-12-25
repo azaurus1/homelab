@@ -5,15 +5,15 @@ jellyfin:
       type: "hostPath"
       hostPath: /data/jellyfin
       hostPathType: DirectoryOrCreate
-    # media:
-    #   enabled: true
-    #   existingClaim: media
-    #   mountPath: /media
-    # cache:
-    #   enabled: true
-    #   mountPath: "/cache"
-    #   type: "emptyDir"
-    # transcode:
-    #   enabled: true
-    #   mountPath: "/config/transcodes"
-    #   type: "emptyDir"
+    media:
+      enabled: true
+      existingClaim: media
+      mountPath: /media
+    cache:
+      enabled: true
+      mountPath: "/cache"
+      type: "emptyDir"
+    transcode:
+      enabled: true
+      mountPath: "/config/transcodes"
+      type: "emptyDir"
