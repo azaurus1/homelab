@@ -1,0 +1,17 @@
+jellyfin:
+  persistence:
+    config:
+      enabled: true
+      type: "hostPath"
+    # media:
+    #   enabled: true
+    #   existingClaim: media
+    #   mountPath: /media
+    # cache:
+    #   enabled: true
+    #   mountPath: "/cache"
+    #   type: "emptyDir"
+    # transcode:
+    #   enabled: true
+    #   mountPath: "/config/transcodes"
+    #   type: "emptyDir"
